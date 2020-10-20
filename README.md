@@ -32,9 +32,39 @@ The signal selection panel always appears in the bar on the right. The available
         signal = [signal;zeros(fs*duration+1,1)];
     ```
   * Sweep
+    ```matlab
+          fs; % Sample rate
+    duration; % Duration in seconds
+     dur_sil; % Silence duration in seconds
+        fini; % Initial frequency in hertz
+        fend; % End frequency in hertz
+        
+        signal = sweeptone(duration,dur_sil,fs,'SweepFrequencyRange',[fini,fend]);
+    ```
   * White Noise
+    ```matlab
+          fs; % Sample rate
+    duration; % Duration in seconds
+    
+        signal = randn(duration*fs,1);
+    ```
   * Pink Noise
+    ```matlab
+          fs; % Sample rate
+    duration; % Duration in seconds
+    
+        signal = pinknoise(duration*fs);
+    ```
   * Pure Tone
+    ```matlab
+          fs; % Sample rate
+    duration; % Duration in seconds
+        freq; % Tone frequency in hertz
+        
+        signal = cos(2*pi*freq*(0:1/fs:duration));
+    ```
+
+All signals are normalized between 0.5 and -0.5
 
 ### Methods
 
