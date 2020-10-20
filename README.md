@@ -5,7 +5,8 @@ Matlab-based software for measuring acoustic parameters and experiments.
 
 This software is made up of different types of measurement (impedance tube, anechoic chamber, general, etc.) and expansion modules for different specific projects.
 
-### Device setup and calibration
+### General
+#### Device setup and calibration
 
 In this panel you can configure the parameters of the audio device and calibrate the system latency (useful for correcting delays in the impulse response). Also, if you have a microphone calibrator, you can calibrate each input channel.
 
@@ -18,7 +19,26 @@ Options:
   - Calibrate latency: Selects the input and output channel and calibrates automatically.
   - Calibrate inputs: Select calibrator signal level, input channel and run calibration.
 
-### Impedance Tube
+#### Signal panel
+The signal selection panel always appears in the bar on the right. The available signals depend on the chosen measurement method, in total the following signals are available:
+  * MLS
+    ```matlab
+          fs; % Sample rate
+    duration; % Duration in seconds of a sequence
+        nseq; % Number of sequences
+        
+        signal = mls(fs*duration+1);
+        signal = repmat(signal,nseq,1);
+        signal = [signal;zeros(fs*duration+1,1)];
+    ```
+  * Sweep
+  * White Noise
+  * Pink Noise
+  * Pure Tone
+
+### Methods
+
+#### Impedance Tube
 
 The impedance tube method is detailed in ISO 10534-2. In this program the measure has been implemented in full compliance with the standard.
 
