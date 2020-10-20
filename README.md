@@ -1,7 +1,7 @@
 # ** Under construction (will be published in november)
 
-## A-Lab
-Matlab-based software for measuring acoustic parameters and experiments.
+## A|Lab
+Matlab-based software for measuring acoustic parameters and experiments. (**A**coustic **Lab**oratory).
 
 This software is made up of different types of measurement (impedance tube, anechoic chamber, general, etc.) and expansion modules for different specific projects.
 
