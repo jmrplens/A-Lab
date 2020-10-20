@@ -21,7 +21,8 @@ Options:
 
 #### Signal panel
 The signal selection panel always appears in the bar on the right. The available signals depend on the chosen measurement method, in total the following signals are available:
-  * MLS
+  * MLS 
+    <img align="right" width="225" src="http://jmrplens.com/GitHub_ALab/mlsPanel.png"></img>
     ```matlab
           fs; % Sample rate
     duration; % Duration in seconds of a sequence
@@ -31,7 +32,8 @@ The signal selection panel always appears in the bar on the right. The available
         signal = repmat(signal,nseq,1);
         signal = [signal;zeros(fs*duration+1,1)];
     ```
-  * Sweep
+  * Sweep 
+    <img align="right" width="225" src="http://jmrplens.com/GitHub_ALab/sweepPanel.png"></img>
     ```matlab
           fs; % Sample rate
     duration; % Duration in seconds
@@ -41,21 +43,24 @@ The signal selection panel always appears in the bar on the right. The available
         
         signal = sweeptone(duration,dur_sil,fs,'SweepFrequencyRange',[fini,fend]);
     ```
-  * White Noise
+  * White Noise 
+    <img align="right" width="225" src="http://jmrplens.com/GitHub_ALab/whitePanel.png"></img>
     ```matlab
           fs; % Sample rate
     duration; % Duration in seconds
     
         signal = randn(duration*fs,1);
     ```
-  * Pink Noise
+  * Pink Noise 
+    <img align="right" width="225" src="http://jmrplens.com/GitHub_ALab/pinkPanel.png"></img>
     ```matlab
           fs; % Sample rate
     duration; % Duration in seconds
     
         signal = pinknoise(duration*fs);
     ```
-  * Pure Tone
+  * Pure Tone 
+    <img align="right" width="225" src="http://jmrplens.com/GitHub_ALab/tonePanel.png"></img>
     ```matlab
           fs; % Sample rate
     duration; % Duration in seconds
@@ -68,7 +73,6 @@ All signals are normalized between 0.5 and -0.5: `signal = (signal/max(abs(signa
 
 #### Information panel
  <img align="left" height="150" src="http://jmrplens.com/GitHub_ALab/infoPanel.png"></img> This panel always appears in the bar on the right. Displays the relevant information of the audio device.
- 
 If latency calibration has not been performed it shows the approximate value (`SamplesPerFrame/SampleRate*2`) but this value is not applied to signals.
 
 If at least one input of the device has been calibrated, the word 'Yes' will be displayed in the input calibration.
