@@ -4,9 +4,9 @@
 # A|Lab
 Matlab-based software for measuring acoustic parameters and experiments. (**A**coustic **Lab**oratory).
 
-This software is made up of different types of measurement (impedance tube, anechoic chamber, general, etc.) and expansion modules for different specific projects.
+This software is made up of different types of measurement (impedance tube, anechoic chamber, general, etc.) and expansion modules for different specific projects. The software is under development and will be adding more measures.
 
-The software has been made with the collaboration of the Escuela Politècnica Superior de Gandia of the Universitat Politècnica de València, mainly giving access to equipment and instrumentation.
+The software has been made with the collaboration of the Escuela Politècnica Superior de Gandia (Universitat Politècnica de València), mainly giving access to equipment and instrumentation.
 
 <!-- MarkdownTOC autolink="true" autoanchor="true" -->
 
