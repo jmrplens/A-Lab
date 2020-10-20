@@ -64,7 +64,7 @@ The signal selection panel always appears in the bar on the right. The available
         signal = cos(2*pi*freq*(0:1/fs:duration));
     ```
 
-All signals are normalized between 0.5 and -0.5
+All signals are normalized between 0.5 and -0.5: `signal = (signal/max(abs(signal)))*0.5;`.
 
 ### Methods
 
