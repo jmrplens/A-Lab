@@ -20,7 +20,7 @@ Options:
   - Calibrate inputs: Select calibrator signal level, input channel and run calibration.
 
 #### Signal panel
-The signal selection panel always appears in the bar on the right. The available signals depend on the chosen measurement method, in total the following signals are available:
+The signal selection panel appears in all types of measurement. The available signals depend on the chosen measurement method, in total the following signals are available:
   * MLS 
     <img align="right" width="225" src="http://jmrplens.com/GitHub_ALab/mlsPanel.png"></img>
     ```matlab
