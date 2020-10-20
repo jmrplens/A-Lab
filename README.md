@@ -1,23 +1,22 @@
 
 # ** Under construction (will be published in november)
-<!-- MarkdownTOC autolink="true" autoanchor="true" -->
 
-- [A|Lab](#a%7Clab)
-  - [General](#general)
-    - [Device setup and calibration](#device-setup-and-calibration)
-    - [Signal panel](#signal-panel)
-    - [Information panel](#information-panel)
-  - [Methods](#methods)
-    - [Impedance Tube](#impedance-tube)
-  - [Supports](#supports)
-
-<!-- /MarkdownTOC -->
-
-<a id="a%7Clab"></a>
 ## A|Lab
 Matlab-based software for measuring acoustic parameters and experiments. (**A**coustic **Lab**oratory).
 
 This software is made up of different types of measurement (impedance tube, anechoic chamber, general, etc.) and expansion modules for different specific projects.
+
+<!-- MarkdownTOC autolink="true" autoanchor="true" -->
+
+- [General](#general)
+  - [Device setup and calibration](#device-setup-and-calibration)
+  - [Signal panel](#signal-panel)
+  - [Information panel](#information-panel)
+- [Methods](#methods)
+  - [Impedance Tube](#impedance-tube)
+- [Supports](#supports)
+
+<!-- /MarkdownTOC -->
 
 <a id="general"></a>
 ### General
