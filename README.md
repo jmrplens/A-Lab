@@ -6,6 +6,8 @@ Matlab-based software for measuring acoustic parameters and experiments. (**A**c
 
 This software is made up of different types of measurement (impedance tube, anechoic chamber, general, etc.) and expansion modules for different specific projects.
 
+The software has been made with the collaboration of the Escuela Politècnica Superior de Gandia of the Universitat Politècnica de València, mainly with access to equipment and instrumentation.
+
 <!-- MarkdownTOC autolink="true" autoanchor="true" -->
 
 - [General](#general)
