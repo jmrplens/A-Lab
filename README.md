@@ -20,6 +20,18 @@ Options:
 
 ### Impedance Tube
 
+The impedance tube method is detailed in ISO 10534-2. In this program the measure has been implemented in full compliance with the standard.
+
+The steps to follow (also indicated in the standard) are:
+  1. It is recommended to calibrate the inputs to be used.
+  1. Enter tube parameters (distances and shape).
+  1. Calibrate the impedance tube system.
+  1. Measure.
+ 
+ The results obtained are: Absolute value of reflection factor, Angle of reflection factor, Sound absorption coefficient, Specific acoustic impedance, Impulse response (two inputs) and Frequency response (two inputs).
+
+Below are some screenshots of this measure. You can see the results panel and export results, the tube calibration panel and the tube information panel.
+
 <img src="http://jmrplens.com/GitHub_ALab/impedanceTube1.png" width="49%"></img> <img src="http://jmrplens.com/GitHub_ALab/impedanceTube2.png" width="49%"></img> 
 <img src="http://jmrplens.com/GitHub_ALab/impedanceTube3.png" width="49%"></img> <img src="http://jmrplens.com/GitHub_ALab/impedanceTube4.png" width="49%"></img> 
 
