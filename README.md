@@ -7,7 +7,16 @@ This software is made up of different types of measurement (impedance tube, anec
 
 ### Device setup and calibration
 
-<img src="http://jmrplens.com/GitHub_ALab/devicepanel.png" width="100%"></img> 
+In this panel you can configure the parameters of the audio device and calibrate the system latency (useful for correcting delays in the impulse response). Also, if you have a microphone calibrator, you can calibrate each input channel.
+
+<p align="center">
+<img src="http://jmrplens.com/GitHub_ALab/devicepanel.png" width="70%"></img> 
+</p>
+
+Options:
+  - Harware configuration: Sample rate, Samples per Frame, Device driver, Audio device and Bit depth.
+  - Calibrate latency: Selects the input and output channel and calibrates automatically.
+  - Calibrate inputs: Select calibrator signal level, input channel and run calibration.
 
 ### Impedance Tube
 
