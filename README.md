@@ -11,10 +11,5 @@ This software is made up of different types of measurement (impedance tube, anec
 
 ### Impedance Tube
 
-<img src="http://jmrplens.com/GitHub_ALab/impedanceTube1.png" width="100%"></img> 
-
-<img src="http://jmrplens.com/GitHub_ALab/impedanceTube2.png" width="100%"></img> 
-
-<img src="http://jmrplens.com/GitHub_ALab/impedanceTube3.png" width="100%"></img> 
-
-<img src="http://jmrplens.com/GitHub_ALab/impedanceTube4.png" width="100%"></img> 
+<img src="http://jmrplens.com/GitHub_ALab/impedanceTube1.png" width="49%"></img> <img src="http://jmrplens.com/GitHub_ALab/impedanceTube2.png" width="49%"></img> 
+<img src="http://jmrplens.com/GitHub_ALab/impedanceTube3.png" width="49%"></img> <img src="http://jmrplens.com/GitHub_ALab/impedanceTube4.png" width="49%"></img> 
