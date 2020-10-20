@@ -91,10 +91,10 @@ All signals are normalized between 0.5 and -0.5: `signal = (signal/max(abs(signa
 <a id="information-panel"></a>
 ## Information panel
  <img align="left" height="150" src="http://jmrplens.com/GitHub_ALab/infoPanel.png"></img> This panel always appears in the bar on the right. Displays the relevant information of the audio device.
-If latency calibration has not been performed it shows the approximate value (`SamplesPerFrame/SampleRate*2`) but this value is not applied to signals.
+ If latency calibration has not been performed it shows the approximate value (`SamplesPerFrame/SampleRate*2`) but this value is not applied to signals.
+ If at least one input of the device has been calibrated, the word 'Yes' will be displayed in the input calibration.
 
-If at least one input of the device has been calibrated, the word 'Yes' will be displayed in the input calibration.
-
+<p><br /><br /></p>
 
 <a id="methods"></a>
 # Methods
