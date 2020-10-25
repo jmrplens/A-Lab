@@ -1,5 +1,5 @@
 
-# ** Under construction (will be published in november)
+# ** Under construction (will be published in november/december)
 
 # A|Lab
 Matlab-based software for measuring acoustic parameters and experiments. (**A**coustic **Lab**oratory).
