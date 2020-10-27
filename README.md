@@ -44,6 +44,7 @@ Options:
 ## Signal panel
 The signal selection panel appears in all types of measurement. The available signals depend on the chosen measurement method, in total the following signals are available:
   * MLS 
+    <img align="right" height="225" src="http://jmrplens.com/GitHub_ALab/mlsPanel.png"></img>
     ```matlab
           fs; % Sample rate
     duration; % Duration in seconds of a sequence
@@ -52,10 +53,9 @@ The signal selection panel appears in all types of measurement. The available si
         signal = mls(round(fs*duration+1));
         signal = repmat(signal,nseq,1);
         signal = [signal;zeros(round(fs*duration+1),1)];
-    ``` 
-    <img align="right" width="225" src="http://jmrplens.com/GitHub_ALab/mlsPanel.png"></img>
+    ```
   * Sweep 
-    
+    <img align="right" width="225" src="http://jmrplens.com/GitHub_ALab/sweepPanel.png"></img>
     ```matlab
           fs; % Sample rate
     duration; % Duration in seconds
@@ -65,27 +65,24 @@ The signal selection panel appears in all types of measurement. The available si
         
         signal = sweeptone(duration,dur_sil,fs,'SweepFrequencyRange',[fini,fend]);
     ```
-    <img align="right" width="225" src="http://jmrplens.com/GitHub_ALab/sweepPanel.png"></img>
   * White Noise 
-   
+    <img align="right" width="225" src="http://jmrplens.com/GitHub_ALab/whitePanel.png"></img>
     ```matlab
           fs; % Sample rate
     duration; % Duration in seconds
     
         signal = randn(round(duration*fs),1);
     ```
-     <img align="right" width="225" src="http://jmrplens.com/GitHub_ALab/whitePanel.png"></img>
   * Pink Noise 
-    
+    <img align="right" width="225" src="http://jmrplens.com/GitHub_ALab/pinkPanel.png"></img>
     ```matlab
           fs; % Sample rate
     duration; % Duration in seconds
     
         signal = pinknoise(round(duration*fs));
     ```
-    <img align="right" width="225" src="http://jmrplens.com/GitHub_ALab/pinkPanel.png"></img>
   * Pure Tone 
-    
+    <img align="right" width="225" src="http://jmrplens.com/GitHub_ALab/tonePanel.png"></img>
     ```matlab
           fs; % Sample rate
     duration; % Duration in seconds
@@ -93,7 +90,6 @@ The signal selection panel appears in all types of measurement. The available si
         
         signal = cos(2*pi*freq*(0:1/fs:duration));
     ```
-<img align="right" width="225" src="http://jmrplens.com/GitHub_ALab/tonePanel.png"></img>
 
 All signals are normalized between 0.5 and -0.5: `signal = (signal/max(abs(signal)))*0.5;`.
 
