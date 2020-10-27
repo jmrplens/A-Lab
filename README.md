@@ -47,9 +47,9 @@ The signal selection panel appears in all types of measurement. The available si
     duration; % Duration in seconds of a sequence
         nseq; % Number of sequences
         
-        signal = mls(fs*duration+1);
+        signal = mls(round(fs*duration+1));
         signal = repmat(signal,nseq,1);
-        signal = [signal;zeros(fs*duration+1,1)];
+        signal = [signal;zeros(round(fs*duration+1),1)];
     ```
   * Sweep 
     <img align="right" width="225" src="http://jmrplens.com/GitHub_ALab/sweepPanel.png"></img>
@@ -68,7 +68,7 @@ The signal selection panel appears in all types of measurement. The available si
           fs; % Sample rate
     duration; % Duration in seconds
     
-        signal = randn(duration*fs,1);
+        signal = randn(round(duration*fs),1);
     ```
   * Pink Noise 
     <img align="right" width="225" src="http://jmrplens.com/GitHub_ALab/pinkPanel.png"></img>
@@ -76,7 +76,7 @@ The signal selection panel appears in all types of measurement. The available si
           fs; % Sample rate
     duration; % Duration in seconds
     
-        signal = pinknoise(duration*fs);
+        signal = pinknoise(round(duration*fs));
     ```
   * Pure Tone 
     <img align="right" width="225" src="http://jmrplens.com/GitHub_ALab/tonePanel.png"></img>
