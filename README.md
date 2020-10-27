@@ -44,7 +44,7 @@ Options:
 ## Signal panel
 The signal selection panel appears in all types of measurement. The available signals depend on the chosen measurement method, in total the following signals are available:
   * MLS 
-    <img align="right" height="225" src="http://jmrplens.com/GitHub_ALab/mlsPanel.png"></img>
+    <img align="left" width="225" src="http://jmrplens.com/GitHub_ALab/mlsPanel.png"></img>
     ```matlab
           fs; % Sample rate
     duration; % Duration in seconds of a sequence
