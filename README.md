@@ -15,7 +15,10 @@ The software has been made with the collaboration of the Escuela Politècnica Su
   - [Signal panel](#signal-panel)
   - [Information panel](#information-panel)
 - [Methods](#methods)
+  - [Aeroacoustics](#aeroacoustics)
+  - [Electroacoustics](#electroacoustics)
   - [Impedance Tube](#impedance-tube)
+- [Addons /modules](#addons-modules)
 - [Supports](#supports)
 - [Author](#author)
 
@@ -102,9 +105,11 @@ All signals are normalized between 0.5 and -0.5: `signal = (signal/max(abs(signa
 # Methods
 
 
+<a id="aeroacoustics"></a>
 ## Aeroacoustics
 
 
+<a id="electroacoustics"></a>
 ## Electroacoustics
 
 <a id="impedance-tube"></a>
@@ -125,6 +130,8 @@ Below are some screenshots of this measure. You can see the results panel and ex
 <img src="http://jmrplens.com/GitHub_ALab/impedanceTube1.png" width="49%"></img> <img src="http://jmrplens.com/GitHub_ALab/impedanceTube2.png" width="49%"></img> 
 <img src="http://jmrplens.com/GitHub_ALab/impedanceTube3.png" width="49%"></img> <img src="http://jmrplens.com/GitHub_ALab/impedanceTube4.png" width="49%"></img> 
 
+<a id="addons-modules"></a>
+# Addons /modules
 
 <a id="supports"></a>
 # Supports
@@ -132,8 +139,6 @@ Below are some screenshots of this measure. You can see the results panel and ex
 <a href="http://www.upv.es"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoUPV.png"></img></a><a href="http://www.gandia.upv.es/"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoEPSG.png"></img></a> ***Thanks to the Universitat Politècnica de València and the Escuela Politècnica Superior de Gandia for providing the necessary equipment to develop some of the measures implemented in the program.***
 
 <p><br /><br /></p>
-
-# Addons /modules
 
 <a id="author"></a>
 # Author
