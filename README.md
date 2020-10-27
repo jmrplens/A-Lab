@@ -101,6 +101,12 @@ All signals are normalized between 0.5 and -0.5: `signal = (signal/max(abs(signa
 <a id="methods"></a>
 # Methods
 
+
+## Aeroacoustics
+
+
+## Electroacoustics
+
 <a id="impedance-tube"></a>
 ## Impedance Tube
 
@@ -126,6 +132,8 @@ Below are some screenshots of this measure. You can see the results panel and ex
 <a href="http://www.upv.es"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoUPV.png"></img></a><a href="http://www.gandia.upv.es/"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoEPSG.png"></img></a> ***Thanks to the Universitat Politècnica de València and the Escuela Politècnica Superior de Gandia for providing the necessary equipment to develop some of the measures implemented in the program.***
 
 <p><br /><br /></p>
+
+# Addons /modules
 
 <a id="author"></a>
 # Author
