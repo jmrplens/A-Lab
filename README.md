@@ -133,6 +133,15 @@ Below are some screenshots of this measure. You can see the results panel and ex
 <a id="addons-modules"></a>
 # Addons /modules
 
+# Standards and theory
+
+Here is a table of the sources used for the implementation of some of the measures implemented in the software.
+
+| Measure | Source |
+|---------|--------|
+| Impedance tube (two microphones)     | <a href="https://www.iso.org/standard/22851.html">ISO 10534-2:1998</a>   |
+| working     | working    |
+
 <a id="supports"></a>
 # Supports
 
