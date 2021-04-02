@@ -94,7 +94,7 @@ The available signals depend on the chosen measurement method, in total the foll
         signal = cos(2*pi*freq*(0:1/fs:duration));
     ```
   * Custom signal
-  
+
     If you want to use a different signal you can import it by selecting it within this panel. The signal must be in a text file with a single column, the sampling frequency will be the one defined in the application configuration.
 
 All signals are normalized between 0.5 and -0.5: `signal = (signal/max(abs(signal)))*0.5;`.
@@ -204,10 +204,10 @@ In the main results panel you can choose to export all the results in text file 
 
 Here is a table of the sources used for the implementation of some of the measures implemented in the software.
 
-| Measure | Source |
-|:-------:|:------:|
-| Impedance tube | <a href="https://www.iso.org/standard/22851.html">ISO 10534-2:1998</a>   |
-| Transmission tube | <a href="https://www.astm.org/Standards/E2611.htm">ASTM 2611 - 19</a> |
+| Measure | Source | M-File |
+|:-------:|:------:|:------:|
+| Impedance tube | <a href="https://www.iso.org/standard/22851.html">ISO 10534-2:1998</a>   | |
+| Transmission tube | <a href="https://www.astm.org/Standards/E2611.htm">ASTM 2611 - 19</a> | |
 
 <a id="supports"></a>
 # Supports
@@ -219,4 +219,4 @@ More to add.....
 
 <a id="author"></a>
 # Author
-Jose M. Requena Plens, 2020. (info@jmrplens.com   | joreple@upv.es)
+Jose M. Requena Plens, 2020. (joreple@upv.es)
