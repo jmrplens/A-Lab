@@ -18,7 +18,12 @@ The software has been made with the collaboration of the Escuela Politècnica Su
   - [Aeroacoustics](#aeroacoustics)
   - [Electroacoustics](#electroacoustics)
   - [Impedance Tube](#impedance-tube)
-- [Addons /modules](#addons-modules)
+  - [Transmission Tube](#transmission-tube)
+    - [Tube parameters](#tube-parameters)
+    - [One-Mic measurement](#one-mic-measurement)
+    - [Two-Mic measurement](#two-mic-measurement)
+    - [Four-Mic measurement](#four-mic-measurement)
+    - [Measure information](#measure-information)
 - [Standards and theory](#standards-and-theory)
 - [Supports](#supports)
 - [Author](#author)
@@ -126,8 +131,37 @@ Below are some screenshots of this measure. You can see the results panel and ex
 <img src="http://jmrplens.com/GitHub_ALab/impedanceTube1.png" width="49%"></img> <img src="http://jmrplens.com/GitHub_ALab/impedanceTube2.png" width="49%"></img> 
 <img src="http://jmrplens.com/GitHub_ALab/impedanceTube3.png" width="49%"></img> <img src="http://jmrplens.com/GitHub_ALab/impedanceTube4.png" width="49%"></img> 
 
-<a id="addons-modules"></a>
-# Addons /modules
+<a id="transmission-tube"></a>
+## Transmission Tube
+
+The transmission tube method is detailed in <a href="https://www.astm.org/Standards/E2611.htm">ASTM 2611</a>. In the program the method is implemented to be able to use one, two or four microphones. It is necessary to have a transmission tube with 4 microphone positions, two on the upstream side and two on the downstream side.
+
+If the sample to be analyzed is symmetrical, only an anechoic end of the tube is necessary. If it is not symmetric, it will be necessary to measure with anechoic end and with rigid end.
+
+<a id="tube-parameters"></a>
+### Tube parameters
+
+<img src="http://jmrplens.com/GitHub_ALab/transmissionTubeParameters.png" width="49%"></img>
+
+<a id="one-mic-measurement"></a>
+### One-Mic measurement
+
+<img src="http://jmrplens.com/GitHub_ALab/transmissionTube1micmeasure.png" width="49%"></img>
+
+<a id="two-mic-measurement"></a>
+### Two-Mic measurement
+
+<img src="http://jmrplens.com/GitHub_ALab/transmissionTube2micmeasure.png" width="49%"></img>
+
+<a id="four-mic-measurement"></a>
+### Four-Mic measurement
+
+<img src="http://jmrplens.com/GitHub_ALab/transmissionTube4micmeasure.png" width="49%"></img>
+
+<a id="measure-information"></a>
+### Measure information
+
+<img src="http://jmrplens.com/GitHub_ALab/transmissionTube4information.png" width="49%"></img>
 
 <a id="standards-and-theory"></a>
 # Standards and theory
@@ -136,8 +170,8 @@ Here is a table of the sources used for the implementation of some of the measur
 
 | Measure | Source |
 |---------|--------|
-| Impedance tube (two microphones)     | <a href="https://www.iso.org/standard/22851.html">ISO 10534-2:1998</a>   |
-| working     | working    |
+| Impedance tube | <a href="https://www.iso.org/standard/22851.html">ISO 10534-2:1998</a>   |
+| Transmission tube | <a href="https://www.astm.org/Standards/E2611.htm">ASTM 2611 - 19</a> |
 
 <a id="supports"></a>
 # Supports
