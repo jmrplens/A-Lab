@@ -24,6 +24,7 @@ The software has been made with the collaboration of the Escuela Politècnica Su
     - [Two-Mic measurement](#two-mic-measurement)
     - [Four-Mic measurement](#four-mic-measurement)
     - [Measure information](#measure-information)
+    - [Results visualization](#results-visualization)
 - [Standards and theory](#standards-and-theory)
 - [Supports](#supports)
 - [Author](#author)
@@ -140,6 +141,7 @@ If the sample to be analyzed is symmetrical, only an anechoic end of the tube is
 
 <a id="tube-parameters"></a>
 ### Tube parameters
+Here the panel to enter the geometric parameters of the tube is shown. Remember to correctly measure all dimensions.
 
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/transmissionTubeParameters.png" width="70%"></img>
@@ -172,6 +174,9 @@ If the sample to be analyzed is symmetrical, only an anechoic end of the tube is
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/transmissionTube4information.png" width="70%"></img>
 </p>
+
+<a id="results-visualization"></a>
+### Results visualization
 
 <a id="standards-and-theory"></a>
 # Standards and theory
