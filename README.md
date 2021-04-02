@@ -46,7 +46,10 @@ Options:
 
 <a id="signal-panel"></a>
 ## Signal panel
-The signal selection panel appears in all types of measurement. The available signals depend on the chosen measurement method, in total the following signals are available:
+The signal selection panel appears in all types of measurement. 
+<img width="225" src="http://jmrplens.com/GitHub_ALab/sweepPanel.png"></img>
+
+The available signals depend on the chosen measurement method, in total the following signals are available:
   * MLS
     ```matlab
           fs; % Sample rate
