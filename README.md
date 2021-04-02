@@ -141,14 +141,18 @@ If the sample to be analyzed is symmetrical, only an anechoic end of the tube is
 
 <a id="tube-parameters"></a>
 ### Tube parameters
-Here the panel to enter the geometric parameters of the tube is shown. Remember to correctly measure all dimensions.
+The panel shown here is used to enter the geometric parameters of the tube. Remember, measure all dimensions correctly.
 
+Also do not forget to indicate the shape of the tube.
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/transmissionTubeParameters.png" width="70%"></img>
 </p>
 
 <a id="one-mic-measurement"></a>
 ### One-Mic measurement
+If you only have one microphone, it is possible to perform the measurement by placing the microphone in each of the measurement positions.
+
+Each time a measurement is made the graph is updated to show which parts have already been measured. Also, if you are not sure that you have carried out the measurement correctly, you can delete it and do it again.
 
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/transmissionTube1micmeasure.png" width="70%"></img>
@@ -156,6 +160,9 @@ Here the panel to enter the geometric parameters of the tube is shown. Remember 
 
 <a id="two-mic-measurement"></a>
 ### Two-Mic measurement
+If you have two microphones you can perform the measurement faster than the one microphone option.
+
+The operation is the same, except that now two input channels are chosen, one for each microphone.
 
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/transmissionTube2micmeasure.png" width="70%"></img>
@@ -163,7 +170,9 @@ Here the panel to enter the geometric parameters of the tube is shown. Remember 
 
 <a id="four-mic-measurement"></a>
 ### Four-Mic measurement
+This is the best option, it reduces errors when manipulating the position of the microphones obtaining better results (although it is not a big difference).
 
+This option also allows you to calibrate the microphones before making the measurement.
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/transmissionTube4micmeasure.png" width="70%"></img>
 </p>
