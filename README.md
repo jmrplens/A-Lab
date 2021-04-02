@@ -203,7 +203,7 @@ In the main results panel you can choose to export all the results in text file 
 Here is a table of the sources used for the implementation of some of the measures implemented in the software.
 
 | Measure | Source |
-|---------|--------|
+|:-------:|:------:|
 | Impedance tube | <a href="https://www.iso.org/standard/22851.html">ISO 10534-2:1998</a>   |
 | Transmission tube | <a href="https://www.astm.org/Standards/E2611.htm">ASTM 2611 - 19</a> |
 
