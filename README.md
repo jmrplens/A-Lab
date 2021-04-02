@@ -20,9 +20,10 @@ The software has been made with the collaboration of the Escuela Politècnica Su
   - [Impedance Tube](#impedance-tube)
   - [Transmission Tube](#transmission-tube)
     - [Tube parameters](#tube-parameters)
-    - [One-Mic measurement](#one-mic-measurement)
-    - [Two-Mic measurement](#two-mic-measurement)
-    - [Four-Mic measurement](#four-mic-measurement)
+    - [Measurement](#measurement)
+      - [One-Mic measurement](#one-mic-measurement)
+      - [Two-Mic measurement](#two-mic-measurement)
+      - [Four-Mic measurement](#four-mic-measurement)
     - [Measure information](#measure-information)
     - [Results visualization](#results-visualization)
 - [Standards and theory](#standards-and-theory)
@@ -148,8 +149,11 @@ Also do not forget to indicate the shape of the tube.
 <img src="http://jmrplens.com/GitHub_ALab/transmissionTubeParameters.png" width="70%"></img>
 </p>
 
+<a id="measurement"></a>
+### Measurement
+
 <a id="one-mic-measurement"></a>
-### One-Mic measurement
+#### One-Mic measurement
 If you only have one microphone, it is possible to perform the measurement by placing the microphone in each of the measurement positions.
 
 Each time a measurement is made the graph is updated to show which parts have already been measured. Also, if you are not sure that you have carried out the measurement correctly, you can delete it and do it again.
@@ -159,7 +163,7 @@ Each time a measurement is made the graph is updated to show which parts have al
 </p>
 
 <a id="two-mic-measurement"></a>
-### Two-Mic measurement
+#### Two-Mic measurement
 If you have two microphones you can perform the measurement faster than the one microphone option.
 
 The operation is the same, except that now two input channels are chosen, one for each microphone.
@@ -169,7 +173,7 @@ The operation is the same, except that now two input channels are chosen, one fo
 </p>
 
 <a id="four-mic-measurement"></a>
-### Four-Mic measurement
+#### Four-Mic measurement
 This is the best option, it reduces errors when manipulating the position of the microphones obtaining better results (although it is not a big difference).
 
 This option also allows you to calibrate the microphones before making the measurement.
