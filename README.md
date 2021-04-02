@@ -128,7 +128,7 @@ Below are some screenshots of this measure. You can see the results panel and ex
 <a id="transmission-tube"></a>
 ## Transmission Tube
 
-The transmission tube method is detailed in <a href="https://www.astm.org/Standards/E2611.htm" target="_blank">ASTM 2611</a>. In the program the method is implemented to be able to use one, two or four microphones. It is necessary to have a transmission tube with 4 microphone positions, two on the upstream side and two on the downstream side.
+The transmission tube method is detailed in <a href="https://www.astm.org/Standards/E2611.htm">ASTM 2611</a>. In the program the method is implemented to be able to use one, two or four microphones. It is necessary to have a transmission tube with 4 microphone positions, two on the upstream side and two on the downstream side.
 
 If the sample to be analyzed is symmetrical, only an anechoic end of the tube is necessary. If it is not symmetric, it will be necessary to measure with anechoic end and with rigid end.
 
@@ -199,13 +199,13 @@ Here is a table of the sources used for the implementation of some of the measur
 
 | Measure | Source |
 |:-------:|:------:|
-| Impedance tube | <a href="https://www.iso.org/standard/22851.html" target="_blank">ISO 10534-2:1998</a>   |
-| Transmission tube | <a href="https://www.astm.org/Standards/E2611.htm" target="_blank">ASTM 2611 - 19</a> |
+| Impedance tube | <a href="https://www.iso.org/standard/22851.html">ISO 10534-2:1998</a>   |
+| Transmission tube | <a href="https://www.astm.org/Standards/E2611.htm">ASTM 2611 - 19</a> |
 
 <a id="supports"></a>
 # Supports
 
-<a href="http://www.upv.es" target="_blank"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoUPV2.png"></img></a><a href="http://www.gandia.upv.es/" target="_blank"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoEPSG2.png"></img></a> ***Thanks to the Universitat Politècnica de València and the Escuela Politècnica Superior de Gandia for providing the necessary equipment to develop some of the measures implemented in the program.***
+<a href="http://www.upv.es"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoUPV2.png"></img></a><a href="http://www.gandia.upv.es/"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoEPSG2.png"></img></a> ***Thanks to the Universitat Politècnica de València and the Escuela Politècnica Superior de Gandia for providing the necessary equipment to develop some of the measures implemented in the program.***
 
 <p><br /><br /></p>
 More to add.....
