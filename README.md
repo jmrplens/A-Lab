@@ -19,6 +19,7 @@ The software has been made with the collaboration of the Escuela Politècnica Su
   - [Electroacoustics](#electroacoustics)
   - [Impedance Tube](#impedance-tube)
 - [Addons /modules](#addons-modules)
+- [Standards and theory](#standards-and-theory)
 - [Supports](#supports)
 - [Author](#author)
 
@@ -43,8 +44,7 @@ Options:
 <a id="signal-panel"></a>
 ## Signal panel
 The signal selection panel appears in all types of measurement. The available signals depend on the chosen measurement method, in total the following signals are available:
-  * MLS 
-    <img align="right" width="225" src="http://jmrplens.com/GitHub_ALab/mlsPanel.png"></img>
+  * MLS
     ```matlab
           fs; % Sample rate
     duration; % Duration in seconds of a sequence
@@ -54,8 +54,7 @@ The signal selection panel appears in all types of measurement. The available si
         signal = repmat(signal,nseq,1);
         signal = [signal;zeros(round(fs*duration+1),1)];
     ```
-  * Sweep 
-    <img align="right" width="225" src="http://jmrplens.com/GitHub_ALab/sweepPanel.png"></img>
+  * Sweep
     ```matlab
           fs; % Sample rate
     duration; % Duration in seconds
@@ -65,24 +64,21 @@ The signal selection panel appears in all types of measurement. The available si
         
         signal = sweeptone(duration,dur_sil,fs,'SweepFrequencyRange',[fini,fend]);
     ```
-  * White Noise 
-    <img align="right" width="225" src="http://jmrplens.com/GitHub_ALab/whitePanel.png"></img>
+  * White Noise
     ```matlab
           fs; % Sample rate
     duration; % Duration in seconds
     
         signal = randn(round(duration*fs),1);
     ```
-  * Pink Noise 
-    <img align="right" width="225" src="http://jmrplens.com/GitHub_ALab/pinkPanel.png"></img>
+  * Pink Noise
     ```matlab
           fs; % Sample rate
     duration; % Duration in seconds
     
         signal = pinknoise(round(duration*fs));
     ```
-  * Pure Tone 
-    <img align="right" width="225" src="http://jmrplens.com/GitHub_ALab/tonePanel.png"></img>
+  * Pure Tone
     ```matlab
           fs; % Sample rate
     duration; % Duration in seconds
@@ -133,6 +129,7 @@ Below are some screenshots of this measure. You can see the results panel and ex
 <a id="addons-modules"></a>
 # Addons /modules
 
+<a id="standards-and-theory"></a>
 # Standards and theory
 
 Here is a table of the sources used for the implementation of some of the measures implemented in the software.
