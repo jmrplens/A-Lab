@@ -8,7 +8,7 @@ This software is made up of different types of measurement (impedance tube, anec
 
 The software has been made with the collaboration of the Escuela Politècnica Superior de Gandia (Universitat Politècnica de València), mainly giving access to equipment and instrumentation.
 
-<!-- MarkdownTOC autolink="true" autoanchor="true" -->
+<!-- MarkdownTOC autolink="true" autoanchor="true" levels="1,2,3" -->
 
 - [General](#general)
   - [Device setup and calibration](#device-setup-and-calibration)
@@ -21,9 +21,6 @@ The software has been made with the collaboration of the Escuela Politècnica Su
   - [Transmission Tube](#transmission-tube)
     - [Tube parameters](#tube-parameters)
     - [Measurement](#measurement)
-      - [One-Mic measurement](#one-mic-measurement)
-      - [Two-Mic measurement](#two-mic-measurement)
-      - [Four-Mic measurement](#four-mic-measurement)
     - [Measure information](#measure-information)
     - [Results visualization](#results-visualization)
 - [Standards and theory](#standards-and-theory)
