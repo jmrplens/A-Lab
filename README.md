@@ -179,6 +179,7 @@ This option also allows you to calibrate the microphones before making the measu
 
 <a id="measure-information"></a>
 ### Measure information
+In this panel you will see some information about the measurement method.
 
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/transmissionTube4information.png" width="70%"></img>
@@ -186,6 +187,14 @@ This option also allows you to calibrate the microphones before making the measu
 
 <a id="results-visualization"></a>
 ### Results visualization
+When you press the button to calculate results, you will see this panel with the different results defined by the standard. If you click on any of the graphs you can see it larger.
+
+Also, if you press the button for other results, you will be able to see the impulse response and the frequency response of all the measurements.
+
+In the main results panel you can choose to export all the results in text file or if you click on any graph you can export in text file only that result.
+<p align="center">
+<img src="http://jmrplens.com/GitHub_ALab/transmissionTube4results.png" width="70%"></img>
+</p>
 
 <a id="standards-and-theory"></a>
 # Standards and theory
