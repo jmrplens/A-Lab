@@ -1,5 +1,5 @@
 
-# ** Under construction (will be published in november/december)
+# ** Under construction (will be published early)
 
 # A|Lab
 Matlab-based software for measuring acoustic parameters and experiments. (**A**coustic **Lab**oratory).
@@ -141,27 +141,37 @@ If the sample to be analyzed is symmetrical, only an anechoic end of the tube is
 <a id="tube-parameters"></a>
 ### Tube parameters
 
-<img src="http://jmrplens.com/GitHub_ALab/transmissionTubeParameters.png" width="49%"></img>
+<p align="center">
+<img src="http://jmrplens.com/GitHub_ALab/transmissionTubeParameters.png" width="70%"></img>
+</p>
 
 <a id="one-mic-measurement"></a>
 ### One-Mic measurement
 
-<img src="http://jmrplens.com/GitHub_ALab/transmissionTube1micmeasure.png" width="49%"></img>
+<p align="center">
+<img src="http://jmrplens.com/GitHub_ALab/transmissionTube1micmeasure.png" width="70%"></img>
+</p>
 
 <a id="two-mic-measurement"></a>
 ### Two-Mic measurement
 
-<img src="http://jmrplens.com/GitHub_ALab/transmissionTube2micmeasure.png" width="49%"></img>
+<p align="center">
+<img src="http://jmrplens.com/GitHub_ALab/transmissionTube2micmeasure.png" width="70%"></img>
+</p>
 
 <a id="four-mic-measurement"></a>
 ### Four-Mic measurement
 
-<img src="http://jmrplens.com/GitHub_ALab/transmissionTube4micmeasure.png" width="49%"></img>
+<p align="center">
+<img src="http://jmrplens.com/GitHub_ALab/transmissionTube4micmeasure.png" width="70%"></img>
+</p>
 
 <a id="measure-information"></a>
 ### Measure information
 
-<img src="http://jmrplens.com/GitHub_ALab/transmissionTube4information.png" width="49%"></img>
+<p align="center">
+<img src="http://jmrplens.com/GitHub_ALab/transmissionTube4information.png" width="70%"></img>
+</p>
 
 <a id="standards-and-theory"></a>
 # Standards and theory
