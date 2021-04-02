@@ -16,7 +16,6 @@ The software has been made with the collaboration of the Escuela Politècnica Su
   - [Information panel](#information-panel)
 - [Methods](#methods)
   - [Aeroacoustics](#aeroacoustics)
-  - [Electroacoustics](#electroacoustics)
   - [Impedance Tube](#impedance-tube)
   - [Transmission Tube](#transmission-tube)
     - [Tube parameters](#tube-parameters)
@@ -107,10 +106,6 @@ All signals are normalized between 0.5 and -0.5: `signal = (signal/max(abs(signa
 
 <a id="aeroacoustics"></a>
 ## Aeroacoustics
-
-
-<a id="electroacoustics"></a>
-## Electroacoustics
 
 <a id="impedance-tube"></a>
 ## Impedance Tube
@@ -210,7 +205,7 @@ Here is a table of the sources used for the implementation of some of the measur
 <a id="supports"></a>
 # Supports
 
-<a href="http://www.upv.es"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoUPV.png"></img></a><a href="http://www.gandia.upv.es/"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoEPSG.png"></img></a> ***Thanks to the Universitat Politècnica de València and the Escuela Politècnica Superior de Gandia for providing the necessary equipment to develop some of the measures implemented in the program.***
+<a href="http://www.upv.es"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoUPV2.png"></img></a><a href="http://www.gandia.upv.es/"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoEPSG2.png"></img></a> ***Thanks to the Universitat Politècnica de València and the Escuela Politècnica Superior de Gandia for providing the necessary equipment to develop some of the measures implemented in the program.***
 
 <p><br /><br /></p>
 More to add.....
