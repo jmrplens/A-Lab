@@ -1,7 +1,8 @@
 
 # ** Under construction (will be published early)
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate?hosted_button_id=BLP3R6VGYJB4Q)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate?hosted_button_id=BLP3R6VGYJB4Q) 
+[![Donate](https://img.shields.io/badge/Donate-Ko--fi-brightgreen?color=ff5f5f)](https://www.paypal.com/donate?hosted_button_id=BLP3R6VGYJB4Q) 
 
 # A|Lab
 Matlab-based software for measuring acoustic parameters and experiments. (**A**coustic **Lab**oratory).
@@ -224,4 +225,4 @@ More to add.....
 Jose M. Requena Plens, 2020. (joreple@upv.es)
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate?hosted_button_id=BLP3R6VGYJB4Q)
-
+[![Donate](https://img.shields.io/badge/Donate-Ko--fi-brightgreen?color=ff5f5f)](https://www.paypal.com/donate?hosted_button_id=BLP3R6VGYJB4Q) 
