@@ -11,18 +11,24 @@ This software is made up of different types of measurement (impedance tube, anec
 
 The software has been made with the collaboration of the Escuela Politècnica Superior de Gandia (Universitat Politècnica de València), mainly giving access to equipment and instrumentation.
 
-<!-- MarkdownTOC autolink="true" autoanchor="true" levels="1,2,3" -->
+<!-- MarkdownTOC autolink="true" autoanchor="true" levels="1,2,3,4" -->
 
 - [General](#general)
   - [Device setup and calibration](#device-setup-and-calibration)
   - [Signal panel](#signal-panel)
   - [Information panel](#information-panel)
 - [Methods](#methods)
-  - [Aeroacoustics](#aeroacoustics)
+  - [General](#general-1)
   - [Impedance Tube](#impedance-tube)
+    - [Measure with one microphone](#measure-with-one-microphone)
+    - [Measure with two microphones](#measure-with-two-microphones)
+      - [Calibrate the impedance tube system](#calibrate-the-impedance-tube-system)
   - [Transmission Tube](#transmission-tube)
     - [Tube parameters](#tube-parameters)
     - [Measurement](#measurement)
+      - [One-Mic measurement](#one-mic-measurement)
+      - [Two-Mic measurement](#two-mic-measurement)
+      - [Four-Mic measurement](#four-mic-measurement)
     - [Measure information](#measure-information)
     - [Results visualization](#results-visualization)
 - [Standards and theory](#standards-and-theory)
@@ -115,8 +121,8 @@ All signals are normalized between 0.5 and -0.5: `signal = (signal/max(abs(signa
 # Methods
 
 
-<a id="aeroacoustics"></a>
-## Aeroacoustics
+<a id="general-1"></a>
+## General
 
 This method is only to perform some tests and see some options that MATLAB offers us, such as the calculation of common parameters in sound level meters.
 
@@ -148,6 +154,7 @@ The side panels that appear in this measurement method are:
 
 
 
+<a id="measure-with-one-microphone"></a>
 ### Measure with one microphone
 
 If you only have one microphone, you can perform the measurement through this panel.
@@ -157,6 +164,7 @@ First place the microphone in position [A] and press `Measure [A]`, then move th
 <img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeOneMicc.png" width="49%"></img>
 </p>
 
+<a id="measure-with-two-microphones"></a>
 ### Measure with two microphones
 
 To measure with two microphones simply place the microphones in position and press `Measure`.
@@ -167,6 +175,7 @@ Once the measurement is finished, press the button `Calculate results` in the ri
 <img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeTwoMicc.png" width="49%"></img>
 </p>
 
+<a id="calibrate-the-impedance-tube-system"></a>
 #### Calibrate the impedance tube system
 
 To calibrate the system, two measurements must be made, one with the normal microphone position, and one with the swapped position.
