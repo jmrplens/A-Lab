@@ -144,7 +144,7 @@ The side panels that appear in this measurement method are:
 ### Measure with one microphone
 
 If you only have one microphone, you can perform the measurement through this panel.
-First place the microphone in position [A] and press `Measure [A]`, then move the microphone to position [B] and press `Measure [B]`. Finally, click on the button `Calculate Results` in the right panel.
+First place the microphone in position [A] and press `Measure [A]`, then move the microphone to position [B] and press `Measure [B]`. Finally, click on the button `Calculate results` in the right panel.
 
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeOneMicc.png" width="49%"></img>
@@ -152,7 +152,9 @@ First place the microphone in position [A] and press `Measure [A]`, then move th
 
 ### Measure with two microphones
 
-
+To measure with two microphones simply place the microphones in position and press `Measure`.
+You can also calibrate the system by pressing `Calibrate (optional)`.
+Once the measurement is finished, press the button `Calculate results` in the right panel. If you have calibrated the tube, the program will ask you if you want to use the calibration.
 
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeTwoMicc.png" width="49%"></img>
@@ -160,6 +162,9 @@ First place the microphone in position [A] and press `Measure [A]`, then move th
 
 #### Calibrate the impedance tube system
 
+To calibrate the system, two measurements must be made, one with the normal microphone position, and one with the swapped position.
+It is also advisable to have an absorbent material to slightly reduce reflections.
+The figures indicate the position of the microphones for each measurement, make sure they are located correctly before measuring. Once the two measurements are finished, click on `Return`.
 
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeTwoMicCalc.png" width="49%"></img>
