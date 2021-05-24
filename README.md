@@ -158,6 +158,12 @@ The side panels that appear in this measurement method are:
 <a id="tube-parameters"></a>
 ### Tube parameters
 
+Enter in this panel the geometric parameters of the tube: Shape, distance between microphones and distance to the sample. Remember, measure all dimensions correctly.
+
+<p align="center">
+<img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeParametersc.png" width="49%"></img>
+</p>
+
 <a id="one-mic-measurement"></a>
 ### One-Mic measurement
 
@@ -179,9 +185,6 @@ Once the measurement is finished, press the button `Calculate results` in the ri
 <img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeTwoMicc.png" width="49%"></img>
 </p>
 
-<a id="information-panel-1"></a>
-### Information panel
-
 <a id="calibrate-the-impedance-tube-system"></a>
 #### Calibrate the impedance tube system
 
@@ -191,6 +194,14 @@ The figures indicate the position of the microphones for each measurement, make 
 
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeTwoMicCalc.png" width="49%"></img>
+</p>
+
+<a id="information-panel-1"></a>
+### Information panel
+In this panel you will see a summary of the measurement method and the limitations according to the tube parameters.
+
+<p align="center">
+<img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeInformationc.png" width="49%"></img>
 </p>
 
 <a id="transmission-tube-astm-2611"></a>
