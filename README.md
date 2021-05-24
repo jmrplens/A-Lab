@@ -46,6 +46,7 @@ Options:
   - Harware configuration: Sample rate, Samples per Frame, Device driver, Audio device and Bit depth.
   - Calibrate latency: Selects the input and output channel and calibrates automatically.
   - Calibrate inputs: Select calibrator signal level, input channel and run calibration.
+  - Air parameters: Sound speed and air density.
 
 <a id="signal-panel"></a>
 ## Signal panel
@@ -123,17 +124,46 @@ All signals are normalized between 0.5 and -0.5: `signal = (signal/max(abs(signa
 The impedance tube method is detailed in ISO 10534-2. In this program the measure has been implemented in full compliance with the standard.
 
 The steps to follow (also indicated in the standard) are:
-  1. It is recommended to calibrate the inputs to be used.
+  1. (Recommended) Calibrate the inputs to be used (<a id="device-setup-and-calibration">configuration panel</a>).
   1. Enter tube parameters (distances and shape).
-  1. Calibrate the impedance tube system.
+  1. (Recommended) Calibrate the impedance tube system (if you use two microphones).
   1. Measure.
  
- The results obtained are: Absolute value of reflection factor, Angle of reflection factor, Sound absorption coefficient, Specific acoustic impedance, Impulse response (two inputs) and Frequency response (two inputs).
+The results obtained are: Reflection factor, Sound absorption coefficient, Specific acoustic impedance, Impulse response (two inputs) and Frequency response (two inputs).
 
-Below are some screenshots of this measure. You can see the results panel and export results, the tube calibration panel and the tube information panel.
+The side panels that appear in this measurement method are:
+* **Left panel**: Here you can open the tube parameter configuration panel, measure with one or two microphones or review the information of the measurement method.
+* **Right panel**: Here you can choose the type of signal and its parameters. You will also have information about the tube and the audio hardware.
 
-<img src="http://jmrplens.com/GitHub_ALab/impedanceTube1.png" width="49%"></img> <img src="http://jmrplens.com/GitHub_ALab/impedanceTube2.png" width="49%"></img> 
-<img src="http://jmrplens.com/GitHub_ALab/impedanceTube3.png" width="49%"></img> <img src="http://jmrplens.com/GitHub_ALab/impedanceTube4.png" width="49%"></img> 
+|Left panel|Right panel|
+|:-------:|:------:|
+|<img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeLeftc.png" width="50%"></img>|<img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeRightc.png" width="50%"></img>|
+
+
+
+### Measure with one microphone
+
+If you only have one microphone, you can perform the measurement through this panel.
+First place the microphone in position [A] and press `Measure [A]`, then move the microphone to position [B] and press `Measure [B]`. Finally, click on the button `Calculate Results` in the right panel.
+
+<p align="center">
+<img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeOneMicc.png" width="49%"></img>
+</p>
+
+### Measure with two microphones
+
+
+
+<p align="center">
+<img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeTwoMicc.png" width="49%"></img>
+</p>
+
+#### Calibrate the impedance tube system
+
+
+<p align="center">
+<img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeTwoMicCalc.png" width="49%"></img>
+</p>
 
 <a id="transmission-tube"></a>
 ## Transmission Tube
