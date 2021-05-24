@@ -51,10 +51,10 @@ In this panel you can configure the parameters of the audio device and calibrate
 </p>
 
 Options:
-  - Harware configuration: Sample rate, Samples per Frame, Device driver, Audio device and Bit depth.
-  - Calibrate latency: Selects the input and output channel and calibrates automatically.
-  - Calibrate inputs: Select calibrator signal level, input channel and run calibration.
-  - Air parameters: Sound speed and air density.
+  - **Harware configuration**: Sample rate, Samples per Frame, Device driver, Audio device and Bit depth.
+  - **Calibrate latency**: Selects the input and output channel and calibrates automatically.
+  - **Calibrate inputs**: Select calibrator signal level, input channel and run calibration.
+  - **Air parameters**: Sound speed and air density.
 
 <a id="signal-panel"></a>
 ## Signal panel
@@ -127,6 +127,7 @@ All signals are normalized between 0.5 and -0.5: `signal = (signal/max(abs(signa
 ## General
 
 This method is only to perform some tests and see some options that MATLAB offers us, such as the calculation of common parameters in sound level meters.
+**Remember: only for test.**
 
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/GeneralMethod.png" width="49%"></img>
