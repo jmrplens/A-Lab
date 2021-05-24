@@ -118,6 +118,13 @@ All signals are normalized between 0.5 and -0.5: `signal = (signal/max(abs(signa
 <a id="aeroacoustics"></a>
 ## Aeroacoustics
 
+This method is only to perform some tests and see some options that MATLAB offers us, such as the calculation of common parameters in sound level meters.
+
+<p align="center">
+<img src="http://jmrplens.com/GitHub_ALab/GeneralMethod.png" width="49%"></img>
+</p>
+
+
 <a id="impedance-tube"></a>
 ## Impedance Tube
 
