@@ -20,14 +20,16 @@ The software has been made with the collaboration of the Escuela Politècnica Su
 - [Methods](#methods)
   - [General](#general-1)
   - [Impedance Tube \(ISO 10534-2\)](#impedance-tube-iso-10534-2)
-    - [One-Mic measurement \(ISO 10534-2\)](#one-mic-measurement-iso-10534-2)
-    - [Two-Mic measurement \(ISO 10534-2\)](#two-mic-measurement-iso-10534-2)
+    - [Tube parameters](#tube-parameters)
+    - [One-Mic measurement](#one-mic-measurement)
+    - [Two-Mic measurement](#two-mic-measurement)
+    - [Information panel](#information-panel-1)
       - [Calibrate the impedance tube system](#calibrate-the-impedance-tube-system)
   - [Transmission Tube \(ASTM 2611\)](#transmission-tube-astm-2611)
-    - [Tube parameters](#tube-parameters)
+    - [Tube parameters](#tube-parameters-1)
     - [Measurement](#measurement)
-      - [One-Mic measurement \(ASTM 2611\)](#one-mic-measurement-astm-2611)
-      - [Two-Mic measurement \(ASTM 2611\)](#two-mic-measurement-astm-2611)
+      - [One-Mic measurement](#one-mic-measurement-1)
+      - [Two-Mic measurement](#two-mic-measurement-1)
       - [Four-Mic measurement](#four-mic-measurement)
     - [Measure information](#measure-information)
     - [Results visualization](#results-visualization)
@@ -134,7 +136,7 @@ This method is only to perform some tests and see some options that MATLAB offer
 <a id="impedance-tube-iso-10534-2"></a>
 ## Impedance Tube (ISO 10534-2)
 
-The impedance tube method is detailed in ISO 10534-2. In this program the measure has been implemented in full compliance with the standard.
+The impedance tube method is detailed in <a href="https://www.iso.org/standard/22851.html">ISO 10534-2</a>. In this program the measure has been implemented in full compliance with the standard.
 
 The steps to follow (also indicated in the standard) are:
   1. (Recommended) Calibrate the inputs to be used (<a id="device-setup-and-calibration">configuration panel</a>).
@@ -153,9 +155,11 @@ The side panels that appear in this measurement method are:
 |<img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeLeftc.png" width="50%"></img>|<img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeRightc.png" width="50%"></img>|
 
 
+<a id="tube-parameters"></a>
+### Tube parameters
 
-<a id="one-mic-measurement-iso-10534-2"></a>
-### One-Mic measurement (ISO 10534-2)
+<a id="one-mic-measurement"></a>
+### One-Mic measurement
 
 If you only have one microphone, you can perform the measurement through this panel.
 First place the microphone in position [A] and press `Measure [A]`, then move the microphone to position [B] and press `Measure [B]`. Finally, click on the button `Calculate results` in the right panel.
@@ -164,8 +168,8 @@ First place the microphone in position [A] and press `Measure [A]`, then move th
 <img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeOneMicc.png" width="49%"></img>
 </p>
 
-<a id="two-mic-measurement-iso-10534-2"></a>
-### Two-Mic measurement (ISO 10534-2)
+<a id="two-mic-measurement"></a>
+### Two-Mic measurement
 
 To measure with two microphones simply place the microphones in position and press `Measure`.
 You can also calibrate the system by pressing `Calibrate (optional)`.
@@ -174,6 +178,9 @@ Once the measurement is finished, press the button `Calculate results` in the ri
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeTwoMicc.png" width="49%"></img>
 </p>
+
+<a id="information-panel-1"></a>
+### Information panel
 
 <a id="calibrate-the-impedance-tube-system"></a>
 #### Calibrate the impedance tube system
@@ -193,7 +200,7 @@ The transmission tube method is detailed in <a href="https://www.astm.org/Standa
 
 If the sample to be analyzed is symmetrical, only an anechoic end of the tube is necessary. If it is not symmetric, it will be necessary to measure with anechoic end and with rigid end.
 
-<a id="tube-parameters"></a>
+<a id="tube-parameters-1"></a>
 ### Tube parameters
 The panel shown here is used to enter the geometric parameters of the tube. Remember, measure all dimensions correctly.
 
@@ -205,8 +212,8 @@ Also do not forget to indicate the shape of the tube.
 <a id="measurement"></a>
 ### Measurement
 
-<a id="one-mic-measurement-astm-2611"></a>
-#### One-Mic measurement (ASTM 2611)
+<a id="one-mic-measurement-1"></a>
+#### One-Mic measurement
 If you only have one microphone, it is possible to perform the measurement by placing the microphone in each of the measurement positions.
 
 Each time a measurement is made the graph is updated to show which parts have already been measured. Also, if you are not sure that you have carried out the measurement correctly, you can delete it and do it again.
@@ -215,8 +222,8 @@ Each time a measurement is made the graph is updated to show which parts have al
 <img src="http://jmrplens.com/GitHub_ALab/transmissionTube1micmeasure.png" width="70%"></img>
 </p>
 
-<a id="two-mic-measurement-astm-2611"></a>
-#### Two-Mic measurement (ASTM 2611)
+<a id="two-mic-measurement-1"></a>
+#### Two-Mic measurement
 If you have two microphones you can perform the measurement faster than the one microphone option.
 
 The operation is the same, except that now two input channels are chosen, one for each microphone.
