@@ -47,17 +47,22 @@ Options:
   - **Calibrate inputs**: Select calibrator signal level, input channel and run calibration.
   - **Air parameters**: Sound speed and air density.
 
-<a id="hardware-configuration"></a>
-### Hardware configuration
-
 <a id="calibrate-latency"></a>
 ### Calibrate latency
+
+All systems have an internal latency from when the signal is emitted until it is received. With this calibration, the latency of the system is obtained and the correction is applied in all measurements, the delay added by the system in the received signal is eliminated.
+
+```matlab
+% Latency; Latency time in seconds
+% sigReceived; Signal received
+
+DelaySamples = floor(Latency*SampleRate);
+sigReceived = [sigReceived(DelaySamples+1:end);zeros(DelaySamples,1)];
+```
 
 <a id="calibrate-inputs"></a>
 ### Calibrate inputs
 
-<a id="air-parameters"></a>
-### Air parameters
 
 <a id="signal-panel"></a>
 ## Signal panel
