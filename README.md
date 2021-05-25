@@ -13,7 +13,7 @@ The software has been made with the collaboration of the Escuela Politècnica Su
 
 ## The heart of the app
 
-
+# Table of contents
 <!-- MarkdownTOC autolink="true" autoanchor="true" levels="1,2,3,4" -->
 
 - [General](#general)
