@@ -80,6 +80,22 @@ To obtain the correct level in the measurements calculations, it is necessary to
 
 You must place the calibrator on the microphone you want to calibrate and click on 'calibrate xx', the calibration factor will automatically be calculated. This calibration factor is automatically applied to all measured signals.
 
+```matlab
+% Calculate calibration factor
+Lcal; % Calibrator reference value in dB (Typical: 94)
+
+Pcal = 10^(Lcal/20) * 2e-5; 
+Xrms = sqrt(sum(sigCal.^2)/length(sigCal)); % = rms(sigCal)
+K = Xrms / Pcal; % Calibration factor
+```
+
+```matlab
+% Apply calibration factor to a measured signal
+K; % Calibration factor
+sigReceived; % Signal received in a measurement from general method, impedance tube, ...
+
+sigReceived = sigReceived ./  K;
+```
 
 
 <a id="signal-panel"></a>
