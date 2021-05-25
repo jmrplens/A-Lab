@@ -14,33 +14,16 @@ The software has been made with the collaboration of the Escuela Politècnica Su
 ## The heart of the app
 
 # Table of contents
-<!-- MarkdownTOC autolink="true" autoanchor="true" levels="1,2,3,4" -->
+<!-- MarkdownTOC autolink="true" autoanchor="true" levels="1,2" -->
 
 - [General](#general)
   - [Device setup and calibration](#device-setup-and-calibration)
-    - [Hardware configuration](#hardware-configuration)
-    - [Calibrate latency](#calibrate-latency)
-    - [Calibrate inputs](#calibrate-inputs)
-    - [Air parameters](#air-parameters)
   - [Signal panel](#signal-panel)
   - [Information panel](#information-panel)
 - [Methods](#methods)
   - [General](#general-1)
   - [Impedance Tube \(ISO 10534-2\)](#impedance-tube-iso-10534-2)
-    - [Tube parameters](#tube-parameters)
-    - [One-Mic measurement](#one-mic-measurement)
-    - [Two-Mic measurement](#two-mic-measurement)
-      - [Calibrate the impedance tube system](#calibrate-the-impedance-tube-system)
-    - [Information panel](#information-panel-1)
-    - [Results visualization](#results-visualization)
   - [Transmission Tube \(ASTM 2611\)](#transmission-tube-astm-2611)
-    - [Tube parameters](#tube-parameters-1)
-    - [One-Mic measurement](#one-mic-measurement-1)
-    - [Two-Mic measurement](#two-mic-measurement-1)
-    - [Four-Mic measurement](#four-mic-measurement)
-      - [Calibrate the transmission tube system](#calibrate-the-transmission-tube-system)
-    - [Measure information](#measure-information)
-    - [Results visualization](#results-visualization-1)
 - [Standards and theory](#standards-and-theory)
 - [Supports](#supports)
 - [Author](#author)
@@ -157,6 +140,17 @@ This method is only to perform some tests and see some options that MATLAB offer
 <a id="impedance-tube-iso-10534-2"></a>
 ## Impedance Tube (ISO 10534-2)
 
+<!-- MarkdownTOC autolink="true" autoanchor="true" levels="3,4" -->
+
+- [Tube parameters](#tube-parameters)
+    - [One-Mic measurement](#one-mic-measurement)
+    - [Two-Mic measurement](#two-mic-measurement)
+      - [Calibrate the impedance tube system](#calibrate-the-impedance-tube-system)
+    - [Information panel](#information-panel-1)
+    - [Results visualization](#results-visualization)
+
+<!-- /MarkdownTOC -->
+
 The impedance tube method is detailed in <a href="https://www.iso.org/standard/22851.html">ISO 10534-2</a>. In this program the measure has been implemented in full compliance with the standard.
 
 The steps to follow (also indicated in the standard) are:
@@ -234,6 +228,14 @@ In this panel you will see a summary of the measurement method and the limitatio
 
 <a id="transmission-tube-astm-2611"></a>
 ## Transmission Tube (ASTM 2611)
+
+- [Tube parameters](#tube-parameters-1)
+    - [One-Mic measurement](#one-mic-measurement-1)
+    - [Two-Mic measurement](#two-mic-measurement-1)
+    - [Four-Mic measurement](#four-mic-measurement)
+      - [Calibrate the transmission tube system](#calibrate-the-transmission-tube-system)
+    - [Measure information](#measure-information)
+    - [Results visualization](#results-visualization-1)
 
 The transmission tube method is detailed in <a href="https://www.astm.org/Standards/E2611.htm">ASTM 2611</a>. In the program the method is implemented to be able to use one, two or four microphones. It is necessary to have a transmission tube with 4 microphone positions, two on the upstream side and two on the downstream side.
 
