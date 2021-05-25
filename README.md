@@ -82,20 +82,20 @@ You must place the calibrator on the microphone you want to calibrate and click 
 
 ```matlab
 % Calculate calibration factor
-Lcal; % Calibrator reference value in dB (Typical: 94)
+Lcal;   % Calibrator reference value in dB (Typical: 94)
 sigCal; % Measured signal with calibrator placed on the microphone
 
-Pcal = 10^(Lcal/20) * 2e-5; 
+Pcal = 10^(Lcal/20) * 2e-5;                 % Calibration reference in Pa
 Xrms = sqrt(sum(sigCal.^2)/length(sigCal)); % = rms(sigCal)
-K = Xrms / Pcal; % Calibration factor
+K = Xrms / Pcal;                            % Calibration factor
 ```
 
 ```matlab
 % Apply calibration factor to a measured signal
-K; % Calibration factor
-sigReceived; % Signal received in a measurement from general method, impedance tube, ...
+K;            % Calibration factor
+sigReceived;  % Signal received in a measurement from general method, impedance tube, ...
 
-sigReceived = sigReceived ./  K;
+sigReceived = sigReceived ./  K; % Calibrated signal
 ```
 
 
