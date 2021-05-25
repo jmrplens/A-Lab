@@ -218,7 +218,7 @@ The side panels that appear in this measurement method are:
 
 |Left panel|Right panel|
 |:-------:|:------:|
-|<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeLeft.png" width="50%"></img>|<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeRight.png" width="50%"></img>|
+|<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeLeft.png" width="50%"></img>|<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeRightc.png" width="50%"></img>|
 
 <a id="tube-parameters-1"></a>
 ### Tube parameters
