@@ -137,7 +137,7 @@ This method is only to perform some tests and see some options that MATLAB offer
 <img src="http://jmrplens.com/GitHub_ALab/GeneralMethod.png" width="49%"></img>
 </p>
 
----
+<br>
 
 <a id="impedance-tube-iso-10534-2"></a>
 ## Impedance Tube (ISO 10534-2)
@@ -227,7 +227,7 @@ In this panel you will see a summary of the measurement method and the limitatio
 <img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeResultsc.png" width="49%"></img>
 </p>
 
----
+<br>
 
 <a id="transmission-tube-astm-2611"></a>
 ## Transmission Tube (ASTM 2611)
