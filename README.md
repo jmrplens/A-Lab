@@ -12,6 +12,14 @@ This software is made up of different types of measurement (impedance tube, anec
 The software has been made with the collaboration of the Escuela Politècnica Superior de Gandia (Universitat Politècnica de València), mainly giving access to equipment and instrumentation.
 
 ## The heart of the app
+The application uses the MATLAB audio libraries, specifically, in order to carry out measurements that can be correlated correctly, it is necessary to emit and receive simultaneously, for this MATLAB has the 'audioPlayerRecorder' object.
+
+In order to make use of the <a href="#">audioPlayerRecorder</a> object, it is necessary to have a sound card that supports 'Full-Duplex'. All external audio cards have 'Full-Duplex', but the audio cards integrated in computers, especially laptops, do not usually have support for this object. A | Lab will notify you with a window if your hardware is not compatible, if you have several sound cards and one that is valid, enter the configuration and select it.
+
+<img width="225" src="http://jmrplens.com/GitHub_ALab/noFullDuplex.png"></img>
+
+If you are only uploading a completed project, you can ignore the warning.
+
 
 # Table of contents
 
