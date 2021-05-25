@@ -18,9 +18,6 @@ In order to make use of the <a href="https://www.mathworks.com/help/audio/ref/au
 
 If you are only uploading a previous project, you can ignore the warning.
 
-<img width="25%" src="http://jmrplens.com/GitHub_ALab/noFullDuplex.png"></img>
-
-
 
 # Table of contents
 
