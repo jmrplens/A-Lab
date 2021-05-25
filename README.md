@@ -14,33 +14,33 @@ The software has been made with the collaboration of the Escuela Politècnica Su
 ## The heart of the app
 
 
-<!-- MarkdownTOC autolink="true" autoanchor="true" levels="1,2,3,4" markdown_preview="markdown" -->
+<!-- MarkdownTOC autolink="true" autoanchor="true" levels="1,2,3,4" bullets="-,+,*,." -->
 
 - [General](#general)
-  - [Device setup and calibration](#device-setup-and-calibration)
-    - [Hardware configuration](#hardware-configuration)
-    - [Calibrate latency](#calibrate-latency)
-    - [Calibrate inputs](#calibrate-inputs)
-    - [Air parameters](#air-parameters)
-  - [Signal panel](#signal-panel)
-  - [Information panel](#information-panel)
+  + [Device setup and calibration](#device-setup-and-calibration)
+    * [Hardware configuration](#hardware-configuration)
+    * [Calibrate latency](#calibrate-latency)
+    * [Calibrate inputs](#calibrate-inputs)
+    * [Air parameters](#air-parameters)
+  + [Signal panel](#signal-panel)
+  + [Information panel](#information-panel)
 - [Methods](#methods)
-  - [General](#general_1)
-  - [Impedance Tube \(ISO 10534-2\)](#impedance-tube-iso-10534-2)
-    - [Tube parameters](#tube-parameters)
-    - [One-Mic measurement](#one-mic-measurement)
-    - [Two-Mic measurement](#two-mic-measurement)
-      - [Calibrate the impedance tube system](#calibrate-the-impedance-tube-system)
-    - [Information panel](#information-panel_1)
-    - [Results visualization](#results-visualization)
-  - [Transmission Tube \(ASTM 2611\)](#transmission-tube-astm-2611)
-    - [Tube parameters](#tube-parameters_1)
-    - [One-Mic measurement](#one-mic-measurement_1)
-    - [Two-Mic measurement](#two-mic-measurement_1)
-    - [Four-Mic measurement](#four-mic-measurement)
-      - [Calibrate the transmission tube system](#calibrate-the-transmission-tube-system)
-    - [Measure information](#measure-information)
-    - [Results visualization](#results-visualization_1)
+  + [General](#general-1)
+  + [Impedance Tube \(ISO 10534-2\)](#impedance-tube-iso-10534-2)
+    * [Tube parameters](#tube-parameters)
+    * [One-Mic measurement](#one-mic-measurement)
+    * [Two-Mic measurement](#two-mic-measurement)
+      . [Calibrate the impedance tube system](#calibrate-the-impedance-tube-system)
+    * [Information panel](#information-panel-1)
+    * [Results visualization](#results-visualization)
+  + [Transmission Tube \(ASTM 2611\)](#transmission-tube-astm-2611)
+    * [Tube parameters](#tube-parameters-1)
+    * [One-Mic measurement](#one-mic-measurement-1)
+    * [Two-Mic measurement](#two-mic-measurement-1)
+    * [Four-Mic measurement](#four-mic-measurement)
+      . [Calibrate the transmission tube system](#calibrate-the-transmission-tube-system)
+    * [Measure information](#measure-information)
+    * [Results visualization](#results-visualization-1)
 - [Standards and theory](#standards-and-theory)
 - [Supports](#supports)
 - [Author](#author)
@@ -143,7 +143,7 @@ All signals are normalized between 0.5 and -0.5: `signal = (signal/max(abs(signa
 # Methods
 
 
-<a id="general_1"></a>
+<a id="general-1"></a>
 ## General
 
 This method is only to perform some tests and see some options that MATLAB offers us, such as the calculation of common parameters in sound level meters.
@@ -217,7 +217,7 @@ The figures indicate the position of the microphones for each measurement, make 
 <img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeTwoMicCalc.png" width="49%"></img>
 </p>
 
-<a id="information-panel_1"></a>
+<a id="information-panel-1"></a>
 ### Information panel
 In this panel you will see a summary of the measurement method and the limitations according to the tube parameters.
 
@@ -255,7 +255,7 @@ The side panels that appear in this measurement method are:
 |:-------:|:------:|
 |<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeLeft.png" width="50%"></img>|<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeRightc.png" width="50%"></img>|
 
-<a id="tube-parameters_1"></a>
+<a id="tube-parameters-1"></a>
 ### Tube parameters
 The panel shown here is used to enter the geometric parameters of the tube. Remember, measure all dimensions correctly.
 
@@ -264,7 +264,7 @@ Also do not forget to indicate the shape of the tube.
 <img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeParams.png" width="49%"></img>
 </p>
 
-<a id="one-mic-measurement_1"></a>
+<a id="one-mic-measurement-1"></a>
 ### One-Mic measurement
 If you only have one microphone, it is possible to perform the measurement by placing the microphone in each of the measurement positions.
 
@@ -274,7 +274,7 @@ Each time a measurement is made the graph is updated to show which parts have al
 <img src="http://jmrplens.com/GitHub_ALab/TransmissionTube1mic.png" width="49%"></img>
 </p>
 
-<a id="two-mic-measurement_1"></a>
+<a id="two-mic-measurement-1"></a>
 ### Two-Mic measurement
 If you have two microphones you can perform the measurement faster than the one microphone option.
 
@@ -308,7 +308,7 @@ In this panel you will see some information about the measurement method.
 <img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeInformation.png" width="49%"></img>
 </p>
 
-<a id="results-visualization_1"></a>
+<a id="results-visualization-1"></a>
 ### Results visualization
 When you press the button to calculate results, you will see this panel with the different results defined by the standard. If you click on any of the graphs you can see it larger.
 
