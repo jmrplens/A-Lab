@@ -11,6 +11,9 @@ This software is made up of different types of measurement (impedance tube, anec
 
 The software has been made with the collaboration of the Escuela Politècnica Superior de Gandia (Universitat Politècnica de València), mainly giving access to equipment and instrumentation.
 
+## The heart of the app
+
+
 <!-- MarkdownTOC autolink="true" autoanchor="true" levels="1,2,3,4" -->
 
 - [General](#general)
