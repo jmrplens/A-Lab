@@ -56,6 +56,14 @@ Options:
   - **Calibrate inputs**: Select calibrator signal level, input channel and run calibration.
   - **Air parameters**: Sound speed and air density.
 
+### Hardware configuration
+
+### Calibrate latency
+
+### Calibrate inputs
+
+### Air parameters
+
 <a id="signal-panel"></a>
 ## Signal panel
 The signal selection panel appears in all types of measurement. 
