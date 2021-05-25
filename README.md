@@ -29,6 +29,12 @@ The software has been made with the collaboration of the Escuela Politècnica Su
 
 <a id="general"></a>
 # General
+
+<br>
+<br>
+<br>
+<br>
+
 <a id="device-setup-and-calibration"></a>
 ## Device setup and calibration
 
@@ -122,6 +128,10 @@ All signals are normalized between 0.5 and -0.5: `signal = (signal/max(abs(signa
 <a id="methods"></a>
 # Methods
 
+<br>
+<br>
+<br>
+<br>
 
 <a id="general-1"></a>
 ## General
