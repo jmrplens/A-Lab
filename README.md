@@ -56,7 +56,7 @@ To calibrate the latency you must connect a cable directly from an output of the
 
 ```matlab
 % Latency calculation
-inCalibration; % Input signal from latency calibration measure
+inCalibration;  % Input signal from latency calibration measure
 outCalibration; % Output signal from latency calibration measure
 
 [cross,time] = xcorr(inCalibration,outCalibration);
@@ -66,8 +66,8 @@ Latency      = time(Midx)/fs;   % Latency time value in seconds
 
 ```matlab
 % Latency correction
-Latency; Latency time in seconds
-sigReceived; Signal received
+Latency;     % Latency time in seconds
+sigReceived; % Signal received
 
 DelaySamples = floor(Latency*SampleRate);
 sigReceived = [sigReceived(DelaySamples+1:end);zeros(DelaySamples,1)];
