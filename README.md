@@ -140,7 +140,7 @@ This method is only to perform some tests and see some options that MATLAB offer
 The impedance tube method is detailed in <a href="https://www.iso.org/standard/22851.html">ISO 10534-2</a>. In this program the measure has been implemented in full compliance with the standard.
 
 The steps to follow (also indicated in the standard) are:
-  1. (Recommended) Calibrate the inputs to be used (<a id="device-setup-and-calibration">configuration panel</a>).
+  1. (Recommended) Calibrate the inputs to be used (<a href="#device-setup-and-calibration">configuration panel</a>).
   1. Enter tube parameters (distances and shape).
   1. (Recommended) Calibrate the impedance tube system (if you use two microphones).
   1. Measure.
@@ -212,8 +212,16 @@ The transmission tube method is detailed in <a href="https://www.astm.org/Standa
 
 If the sample to be analyzed is symmetrical, only an anechoic end of the tube is necessary. If it is not symmetric, it will be necessary to measure with anechoic end and with rigid end.
 
+The steps to follow (also indicated in the standard) are:
+  1. (Recommended) Calibrate the inputs to be used (<a href="#device-setup-and-calibration">configuration panel</a>).
+  1. Enter tube parameters (distances and shape).
+  1. (Recommended) Calibrate the impedance tube system (if you use four microphones).
+  1. Measure with anechoic end and, if not symmetrical sample, repeat measure with rigid end.
+ 
+The results obtained are: Transmission loss, Impedance, Transmission factor, Reflection factor, Propagation wavenamber in material, Sound absorption coefficient, Impulse response and Frequency response (four inputs) for anechoic and rigid end measure (if not symmetrical).
+
 The side panels that appear in this measurement method are:
-* **Left panel**: Here you can open the tube parameter configuration panel, measure with one or two microphones or review the information of the measurement method.
+* **Left panel**: Here you can open the tube parameter configuration panel, measure with one, two or four microphones or review the information of the measurement method.
 * **Right panel**: Here you can choose the type of signal and its parameters. You will also have information about the tube and the audio hardware.
 
 |Left panel|Right panel|
