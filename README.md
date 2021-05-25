@@ -269,6 +269,9 @@ In this panel you will see a summary of the measurement method and the limitatio
 <a id="results-visualization"></a>
 ### Results visualization
 
+In the results panel you can choose the resolution of the FFT and see the standard results.
+You can also export the results in text file to use it in another software, also export the graphs (PNG, JPG, PDF, EPS or FIG) or see the impulse and frequency responses of the measured signals.
+
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeResultsc.png" width="49%"></img>
 </p>
