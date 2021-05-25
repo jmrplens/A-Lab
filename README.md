@@ -212,13 +212,21 @@ The transmission tube method is detailed in <a href="https://www.astm.org/Standa
 
 If the sample to be analyzed is symmetrical, only an anechoic end of the tube is necessary. If it is not symmetric, it will be necessary to measure with anechoic end and with rigid end.
 
+The side panels that appear in this measurement method are:
+* **Left panel**: Here you can open the tube parameter configuration panel, measure with one or two microphones or review the information of the measurement method.
+* **Right panel**: Here you can choose the type of signal and its parameters. You will also have information about the tube and the audio hardware.
+
+|Left panel|Right panel|
+|:-------:|:------:|
+|<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeLeft.png" width="50%"></img>|<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeRight.png" width="50%"></img>|
+
 <a id="tube-parameters-1"></a>
 ### Tube parameters
 The panel shown here is used to enter the geometric parameters of the tube. Remember, measure all dimensions correctly.
 
 Also do not forget to indicate the shape of the tube.
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/transmissionTubeParameters.png" width="70%"></img>
+<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeParams.png" width="49%"></img>
 </p>
 
 <a id="measurement"></a>
@@ -231,7 +239,7 @@ If you only have one microphone, it is possible to perform the measurement by pl
 Each time a measurement is made the graph is updated to show which parts have already been measured. Also, if you are not sure that you have carried out the measurement correctly, you can delete it and do it again.
 
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/transmissionTube1micmeasure.png" width="70%"></img>
+<img src="http://jmrplens.com/GitHub_ALab/TransmissionTube1mic.png" width="49%"></img>
 </p>
 
 <a id="two-mic-measurement-1"></a>
@@ -241,7 +249,7 @@ If you have two microphones you can perform the measurement faster than the one 
 The operation is the same, except that now two input channels are chosen, one for each microphone.
 
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/transmissionTube2micmeasure.png" width="70%"></img>
+<img src="http://jmrplens.com/GitHub_ALab/TransmissionTube2mic.png" width="49%"></img>
 </p>
 
 <a id="four-mic-measurement"></a>
@@ -250,7 +258,7 @@ This is the best option, it reduces errors when manipulating the position of the
 
 This option also allows you to calibrate the microphones before making the measurement.
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/transmissionTube4micmeasure.png" width="70%"></img>
+<img src="http://jmrplens.com/GitHub_ALab/TransmissionTube4mic.png" width="49%"></img>
 </p>
 
 <a id="measure-information"></a>
@@ -258,7 +266,7 @@ This option also allows you to calibrate the microphones before making the measu
 In this panel you will see some information about the measurement method.
 
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/transmissionTube4information.png" width="70%"></img>
+<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeInformation.png" width="49%"></img>
 </p>
 
 <a id="results-visualization"></a>
@@ -269,7 +277,7 @@ Also, if you press the button for other results, you will be able to see the imp
 
 In the main results panel you can choose to export all the results in text file or if you click on any graph you can export in text file only that result.
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/transmissionTube4results.png" width="70%"></img>
+<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeResults.png" width="49%"></img>
 </p>
 
 <a id="standards-and-theory"></a>
