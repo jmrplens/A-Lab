@@ -67,7 +67,7 @@ Latency      = time(Midx)/fs;   % Latency time value in seconds
 ```matlab
 % Latency correction
 Latency;     % Latency time in seconds
-sigReceived; % Signal received
+sigReceived; % Signal received in a measurement from general method, impedance tube, ...
 
 DelaySamples = floor(Latency*SampleRate);
 sigReceived = [sigReceived(DelaySamples+1:end);zeros(DelaySamples,1)];
