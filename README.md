@@ -52,10 +52,22 @@ Options:
 
 All systems have an internal latency from when the signal is emitted until it is received. With this calibration, the latency of the system is obtained and the correction is applied in all measurements, the delay added by the system in the received signal is eliminated.
 
+To calibrate the latency you must connect a cable directly from an output of the sound card to an input. Once connected, choose the channels where the cable is connected and press `Calibrate latency`, the program will make 5 measurements to calculate the latency of the system.
+
 ```matlab
-%% Latency correction
-% Latency; Latency time in seconds
-% sigReceived; Signal received
+% Latency calculation
+inCalibration; % Input signal from latency calibration measure
+outCalibration; % Output signal from latency calibration measure
+
+[cross,time] = xcorr(inCalibration,outCalibration);
+[~,Midx]     = max(abs(cross)); % Find peak
+Latency      = time(Midx)/fs;   % Latency time value in seconds
+```
+
+```matlab
+% Latency correction
+Latency; Latency time in seconds
+sigReceived; Signal received
 
 DelaySamples = floor(Latency*SampleRate);
 sigReceived = [sigReceived(DelaySamples+1:end);zeros(DelaySamples,1)];
