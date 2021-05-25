@@ -53,6 +53,7 @@ Options:
 All systems have an internal latency from when the signal is emitted until it is received. With this calibration, the latency of the system is obtained and the correction is applied in all measurements, the delay added by the system in the received signal is eliminated.
 
 ```matlab
+%% Latency correction
 % Latency; Latency time in seconds
 % sigReceived; Signal received
 
