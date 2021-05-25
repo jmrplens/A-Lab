@@ -78,11 +78,12 @@ sigReceived = [sigReceived(DelaySamples+1:end);zeros(DelaySamples,1)];
 
 To obtain the correct level in the measurements calculations, it is necessary to obtain a factor that applies a dimension to the input signal. It is the calibration factor and it is obtained from a source that has a known acoustic pressure, usually a calibrator emits 94dB but if you have another type of calibrator you can indicate the reference level.
 
-You must place the calibrator on the microphone you want to calibrate and click on 'calibrate xx', the calibration factor will automatically be calculated. This calibration factor is automatically applied to all measured signals.
+You must place the calibrator on the microphone you want to calibrate and click on 'Calibrate channel N', the calibration factor will automatically be calculated. This calibration factor is automatically applied to all measured signals.
 
 ```matlab
 % Calculate calibration factor
 Lcal; % Calibrator reference value in dB (Typical: 94)
+sigCal; % Measured signal with calibrator placed on the microphone
 
 Pcal = 10^(Lcal/20) * 2e-5; 
 Xrms = sqrt(sum(sigCal.^2)/length(sigCal)); % = rms(sigCal)
