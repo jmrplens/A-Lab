@@ -140,16 +140,15 @@ This method is only to perform some tests and see some options that MATLAB offer
 <a id="impedance-tube-iso-10534-2"></a>
 ## Impedance Tube (ISO 10534-2)
 
-<!-- MarkdownTOC autolink="true" autoanchor="true" levels="3,4" -->
-
+---
+##### Table of contents
 - [Tube parameters](#tube-parameters)
     - [One-Mic measurement](#one-mic-measurement)
     - [Two-Mic measurement](#two-mic-measurement)
       - [Calibrate the impedance tube system](#calibrate-the-impedance-tube-system)
     - [Information panel](#information-panel-1)
     - [Results visualization](#results-visualization)
-
-<!-- /MarkdownTOC -->
+---
 
 The impedance tube method is detailed in <a href="https://www.iso.org/standard/22851.html">ISO 10534-2</a>. In this program the measure has been implemented in full compliance with the standard.
 
