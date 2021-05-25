@@ -14,7 +14,7 @@ The software has been made with the collaboration of the Escuela Politècnica Su
 ## The heart of the app
 
 
-<!-- MarkdownTOC autolink="true" autoanchor="true" levels="1,2,3,4" bullets="-,+,*,." -->
+<!-- MarkdownTOC autolink="true" autoanchor="true" levels="1,2,3,4" bullets="-,+,*" -->
 
 - [General](#general)
   + [Device setup and calibration](#device-setup-and-calibration)
@@ -30,7 +30,7 @@ The software has been made with the collaboration of the Escuela Politècnica Su
     * [Tube parameters](#tube-parameters)
     * [One-Mic measurement](#one-mic-measurement)
     * [Two-Mic measurement](#two-mic-measurement)
-      . [Calibrate the impedance tube system](#calibrate-the-impedance-tube-system)
+      - [Calibrate the impedance tube system](#calibrate-the-impedance-tube-system)
     * [Information panel](#information-panel-1)
     * [Results visualization](#results-visualization)
   + [Transmission Tube \(ASTM 2611\)](#transmission-tube-astm-2611)
@@ -38,7 +38,7 @@ The software has been made with the collaboration of the Escuela Politècnica Su
     * [One-Mic measurement](#one-mic-measurement-1)
     * [Two-Mic measurement](#two-mic-measurement-1)
     * [Four-Mic measurement](#four-mic-measurement)
-      . [Calibrate the transmission tube system](#calibrate-the-transmission-tube-system)
+      - [Calibrate the transmission tube system](#calibrate-the-transmission-tube-system)
     * [Measure information](#measure-information)
     * [Results visualization](#results-visualization-1)
 - [Standards and theory](#standards-and-theory)
