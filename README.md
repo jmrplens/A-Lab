@@ -50,7 +50,7 @@ The software has been made with the collaboration of the Escuela Politècnica Su
 In this panel you can configure the parameters of the audio device and calibrate the system latency (useful for correcting delays in the impulse response). Also, if you have a microphone calibrator, you can calibrate each input channel.
 
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/devicepanel.png" width="70%"></img> 
+<img src="http://jmrplens.com/GitHub_ALab/devicepanelc.png" width="70%"></img> 
 </p>
 
 Options:
