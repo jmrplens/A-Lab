@@ -291,6 +291,7 @@ You can also export the results in text file to use it in another software, also
   - [Calibrate the transmission tube system](#calibrate-the-transmission-tube-system)
 - [Measure information](#measure-information)
 - [Results visualization](#results-visualization-1)
+  - [Single results visualization](#single-results-visualization-1)
 ---
 
 The transmission tube method is detailed in <a href="https://www.astm.org/Standards/E2611.htm">ASTM 2611</a>. In the program the method is implemented to be able to use one, two or four microphones. It is necessary to have a transmission tube with 4 microphone positions, two on the upstream side and two on the downstream side.
@@ -372,10 +373,22 @@ When you press the button to calculate results, you will see this panel with the
 
 Also, if you press the button for other results, you will be able to see the impulse response and the frequency response of all the measurements.
 
-In the main results panel you can choose to export all the results in text file or if you click on any graph you can export in text file only that result.
+In the main results panel you can choose to export all the results in text file or if you click on any graph you go to: [Single result](#single-results-visualization-1).
+
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeResults.png" width="49%"></img>
 </p>
+
+<a id="single-results-visualization-1"></a>
+#### Single results visualization
+
+In this panel you will be able to see the larger graph and you will also be able to export only that result to a text file or graphic file. 
+In addition, in the case of absorption and reflection, by clicking on their graphs you will see both the hard-backed calculation that defines the ASTM 2611 standard and the anechoic-backed calculation (from transfer matrix method).
+
+<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeSingleTrans.png" width="32%"></img>
+<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeSingleReflection.png" width="32%"></img>
+<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeSingleAbsorption.png" width="32%"></img>
+
 
 <a id="robot-measurement-upv"></a>
 ## Robot measurement (Polytechnic University of Valencia)
