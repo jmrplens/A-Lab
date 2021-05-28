@@ -360,6 +360,14 @@ This option also allows you to calibrate the microphones before making the measu
 <a id="calibrate-the-transmission-tube-system"></a>
 #### Calibrate the transmission tube system
 
+To calibrate the transmission tube, it is necessary to perform 4 measurements:
+1. Take a measurement first with all four microphones in their normal positions. (Microphone order: [1,2,3,4])
+2. Swap the position of microphone 1 with microphone 2 (the other microphones leave them in their normal position) and measure. (Microphone order: [2,1,3,4])
+3. Put the microphone 2 back to its position, put the microphone 1 in the position of the microphone 3 and the microphone 3 in the position of the microphone 1. Measure. (Microphone order: [3,2,1,4])
+4. Put the microphone 3 back to its position, put the microphone 1 in the position of the microphone 4 and the microphone 4 in the position of the microphone 1. Measure. (Microphone order: [4,2,3,1])
+
+Once all the measurements are finished, click on `Done`.
+
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/TransmissionTube4micCal.png" width="49%"></img>
 </p>
