@@ -340,9 +340,9 @@ Each time a measurement is made the graph is updated to show which parts have al
 
 <a id="two-mic-measurement-1"></a>
 ### Two-Mic measurement
-If you have two microphones you can perform the measurement faster than the one microphone option.
+If you have two microphones you can perform the measurement faster than the one microphone option. The operation is the same, except that now two input channels are chosen, one for each microphone.
 
-The operation is the same, except that now two input channels are chosen, one for each microphone.
+The first measurement is made with the microphones in positions `A` and `B` (upstream) and the second in `C` and `D` (downstream), that is why microphone 1 corresponds to position `A` and `C`, and microphone 2 to position `B` and `D`.
 
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/TransmissionTube2mic.png" width="49%"></img>
