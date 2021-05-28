@@ -185,7 +185,7 @@ All signals are normalized between 0.5 and -0.5: `signal = (signal/max(abs(signa
 This method is only to perform some tests and see some options that MATLAB offers us, such as the calculation of common parameters in sound level meters.
 **Remember: only for test.**
 
-If you do not select an output, the input signal will be recorded for the same duration as the signal configured in the panel on the right.
+**Tip**: If you have calibrated the input of a microphone, take a measurement with the calibrator attached to the microphone. You can see the measured value in the 'Sound Pressure Level' panel, it must be the same as the reference value of the calibrator. This way you will check that everything is working correctly.
 
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/GeneralMethod.png" width="49%"></img>
