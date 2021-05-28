@@ -9,7 +9,7 @@ Matlab-based software for measuring acoustic parameters and experiments. (**A**c
 
 This software is made up of different types of measurement (impedance tube, anechoic chamber, general, etc.) and expansion modules for different specific projects. The software is under development and will be adding more measures.
 
-The software has been made with the collaboration of the Escuela Politècnica Superior de Gandia (Universitat Politècnica de València), mainly giving access to equipment and instrumentation.
+The software has been made with the collaboration of the [Waves in Complex Media group](https://igic.webs.upv.es/index.php?option=com_content&view=article&id=22)  located in the [Polytechnic School of Gandia](https://www.upv.es/contenidos/CGANDIA/index-en.html) which is part of the [Polytechnic University of Valencia](https://www.upv.es/index-en.html), mainly giving access to equipment and instrumentation and data to be able to validate the results.
 
 ## The heart of the app
 The application uses the MATLAB audio libraries, specifically, in order to carry out measurements that can be correlated correctly, it is necessary to emit and receive simultaneously, for this MATLAB has the <a href="https://www.mathworks.com/help/audio/ref/audioplayerrecorder-system-object.html">audioPlayerRecorder</a> object.
