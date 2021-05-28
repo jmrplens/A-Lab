@@ -185,6 +185,8 @@ All signals are normalized between 0.5 and -0.5: `signal = (signal/max(abs(signa
 This method is only to perform some tests and see some options that MATLAB offers us, such as the calculation of common parameters in sound level meters.
 **Remember: only for test.**
 
+If you do not select an output, the input signal will be recorded for the same duration as the signal configured in the panel on the right.
+
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/GeneralMethod.png" width="49%"></img>
 </p>
