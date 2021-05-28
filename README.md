@@ -388,7 +388,7 @@ When you press the button to calculate results, you will see this panel with the
 
 Also, if you press the button for other results, you will be able to see the impulse response and the frequency response of all the measurements.
 
-In the main results panel you can choose to export all the results in text file or if you click on any graph you go to: [Single result](#single-results-visualization-1).
+In the main results panel you can choose to export all the results in text file, export the **matrix transfer function** (T11,T12,T21,T22) in text file for your own calculations or if you click on any graph you go to: [Single result](#single-results-visualization-1).
 
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeResults.png" width="49%"></img>
