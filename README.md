@@ -409,7 +409,7 @@ Here is a table of the sources used for the implementation of some of the measur
 <a href="https://www.upv.es"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoUPV2.png"></img></a><a href="https://www.gandia.upv.es/"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoEPSG2.png"></img></a><a href="https://igic.webs.upv.es/"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoIGIC.png"></img></a>***Thanks to the [Waves in Complex Media group](https://igic.webs.upv.es/index.php?option=com_content&view=article&id=22), [Polytechnic School of Gandia](https://www.upv.es/contenidos/CGANDIA/index-en.html) and [Polytechnic University of Valencia](https://www.upv.es/index-en.html) for providing the necessary equipment to develop some of the measures implemented in the software and for all the support in time, meet, talk and discussions.***
 
 <p><br /><br /></p>
-Special mention for [Gabriele Bunkheila](https://www.linkedin.com/in/gabrielebunkheila/) and [Carlos Sanchis](https://www.linkedin.com/in/carsanbo/) for helping me answer my questions with MATLAB, those long email threads are very valuable
+Special mention for <a href="https://www.linkedin.com/in/gabrielebunkheila/">Gabriele Bunkheila</a> and <a href="https://www.linkedin.com/in/carsanbo/">Carlos Sanchis</a> for helping me answer my questions with MATLAB, those long email threads are very valuable
 
 <a id="author"></a>
 # Author
