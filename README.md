@@ -7,7 +7,9 @@
 # A|Lab
 Matlab-based software for measuring acoustic parameters and experiments. (**A**coustic **Lab**oratory).
 
-This software is made up of different types of measurement (impedance tube, anechoic chamber, general, etc.) and expansion modules for different specific projects. The software is under development and will be adding more measures.
+This software is made up of different types of measurement (impedance tube, transmission tube, general, etc.) and expansion modules for different specific projects. The software is under development and will be adding more measures.
+
+**If you find any bug in the interface or in the calculations, please inform me and I will fix it as soon as possible. To report bugs or request feature go to [Issues](https://github.com/jmrplens/A-Lab/issues).**
 
 The software has been made with the collaboration of the [Waves in Complex Media group](https://igic.webs.upv.es/index.php?option=com_content&view=article&id=22)  located in the [Polytechnic School of Gandia](https://www.upv.es/contenidos/CGANDIA/index-en.html) which is part of the [Polytechnic University of Valencia](https://www.upv.es/index-en.html), mainly giving access to equipment and instrumentation and data to be able to validate the results.
 
@@ -18,6 +20,9 @@ In order to make use of the <a href="https://www.mathworks.com/help/audio/ref/au
 
 If you are only opening a previous project, you can ignore the warning.
 
+## Examples
+
+The program allows you to save the entire measurement project to be able to open it again at any time and observe or export the results. To be able to test the program quickly, some examples of impedance tube and transmission tube measurements have been included, open them from the top menu `File->Load project`
 
 # Table of contents
 
@@ -408,7 +413,7 @@ Here is a table of the sources used for the implementation of some of the measur
 
 <a href="https://www.upv.es"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoUPV2.png"></img></a><a href="https://www.gandia.upv.es/"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoEPSG2.png"></img></a><a href="https://igic.webs.upv.es/"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoIGICb.png"></img></a>***Thanks to the [Waves in Complex Media group](https://igic.webs.upv.es/index.php?option=com_content&view=article&id=22), [Polytechnic School of Gandia](https://www.upv.es/contenidos/CGANDIA/index-en.html) and [Polytechnic University of Valencia](https://www.upv.es/index-en.html) for providing the necessary equipment to develop some of the measures implemented in the software and for all the support in time, meet, talk and discussions.***
 
-<p><br /><br /></p>
+<p><br /></p>
 Special mention for <a href="https://www.linkedin.com/in/gabrielebunkheila/">Gabriele Bunkheila</a> and <a href="https://www.linkedin.com/in/carsanbo/">Carlos Sanchis</a> for helping me answer my questions with MATLAB, those long email threads are very valuable.
 
 <a id="author"></a>
