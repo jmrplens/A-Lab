@@ -404,9 +404,14 @@ In addition, in the case of absorption and reflection, by clicking on their grap
 <img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeSingleReflection.png" width="32%"></img>
 <img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeSingleAbsorption.png" width="32%"></img>
 
+<br>
 
 <a id="robot-measurement-upv"></a>
 ## Robot measurement (Polytechnic University of Valencia)
+
+This measurement method is exclusive to the [Polytechnic University of Valencia](https://www.upv.es/index-en.html), it performs acoustic measurements using a three-axis robot for automated measurements in a plane or volume. A page dedicated to this method will be included soon to facilitate use by students and researchers at the [Polytechnic University of Valencia](https://www.upv.es/index-en.html).
+
+---
 
 <a id="standards-and-theory"></a>
 # Standards and theory
@@ -418,6 +423,8 @@ Here is a table of the sources used for the implementation of some of the measur
 | Impedance tube | <a href="https://www.iso.org/standard/22851.html">ISO 10534-2:1998</a>   | `calculationsTwoMicISO105342.m`|
 | Transmission tube | <a href="https://www.astm.org/Standards/E2611.htm">ASTM 2611 - 19</a> | `calculationsFourMicASTM2611.m` |
 
+---
+
 <a id="supports"></a>
 # Supports
 
@@ -425,6 +432,8 @@ Here is a table of the sources used for the implementation of some of the measur
 
 <p><br /></p>
 Special mention for <a href="https://www.linkedin.com/in/gabrielebunkheila/">Gabriele Bunkheila</a> and <a href="https://www.linkedin.com/in/carsanbo/">Carlos Sanchis</a> for helping me answer my questions with MATLAB, those long email threads are very valuable.
+
+---
 
 <a id="author"></a>
 # Author
