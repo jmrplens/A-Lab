@@ -27,7 +27,7 @@ If you are only opening a previous project, you can ignore the warning.
 
 ## Examples
 
-The program allows you to save the entire measurement project to be able to open it again at any time and view or export the results. To be able to test the program quickly, some examples of impedance tube and transmission tube measurements have been included, open them from the top menu `File->Load project`.
+The software allows you to save the entire measurement project to be able to open it again at any time and view or export the results. To be able to test the software quickly, some examples of impedance tube and transmission tube measurements have been included, open them from the top menu `File->Load project`.
 
 # Table of contents
 
@@ -69,7 +69,7 @@ Options:
 
 All systems have an internal latency from the moment the signal is emitted until it is received. With this calibration, the latency of the system is obtained and the correction is applied in all measurements, the delay added by the system in the received signal is eliminated.
 
-To calibrate the latency you must connect a cable directly from an output of the sound card to an input. Once connected, choose the channels where the cable is connected and press `Calibrate latency`. The program will make 5 measurements to calculate the latency of the system.
+To calibrate the latency you must connect a cable directly from an output of the sound card to an input. Once connected, choose the channels where the cable is connected and press `Calibrate latency`. The software will make 5 measurements to calculate the latency of the system.
 
 ```matlab
 % Latency calculation
@@ -215,7 +215,7 @@ This method is only to perform some tests and see some options that MATLAB offer
 - [Results visualization](#results-visualization)
 ---
 
-The impedance tube method is detailed in <a href="https://www.iso.org/standard/22851.html">ISO 10534-2</a>. In this program the measure has been implemented in full compliance with the standard.
+The impedance tube method is detailed in <a href="https://www.iso.org/standard/22851.html">ISO 10534-2</a>. In this software the measure has been implemented in full compliance with the standard.
 
 The steps to follow (also indicated in the standard) are:
   1. Calibrate the inputs to be used (<a href="#device-setup-and-calibration">configuration panel</a>). (_Recommended_)
