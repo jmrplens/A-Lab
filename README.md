@@ -6,24 +6,28 @@
 [![Sponsor](https://img.shields.io/badge/Sponsor-GitHub-brightgreen?color=ea4aaa)](https://github.com/sponsors/jmrplens) 
 
 # A|Lab
-Matlab-based software for measuring acoustic parameters and experiments. (**A**coustic **Lab**oratory).
+Matlab-based software for measuring acoustic parameters and experiments (**A**coustic **Lab**oratory).
 
-This software is made up of different types of measurement (impedance tube, transmission tube, general, etc.) and expansion modules for different specific projects. The software is under development and will be adding more measures.
+This software is made up of different types of measurement (impedance tube, transmission tube, general, etc.) and expansion modules for different specific projects. The software is under development and will be adding more measure methods.
 
-**If you find any bug in the interface or in the calculations, please inform me and I will fix it as soon as possible. To report bugs or request feature go to [Issues](https://github.com/jmrplens/A-Lab/issues).**
+**If you find any bug in the interface or in the calculations, please inform and I will fix it as soon as possible. To feature requests or bug reports go to [Issues](https://github.com/jmrplens/A-Lab/issues).**
 
 The software has been made with the collaboration of the [Waves in Complex Media group](https://igic.webs.upv.es/index.php?option=com_content&view=article&id=22)  located in the [Higher Polytechnic School of Gandia](https://www.upv.es/contenidos/CGANDIA/index-en.html) which is part of the [Polytechnic University of Valencia](https://www.upv.es/index-en.html), mainly giving access to equipment and instrumentation and data to be able to validate the results.
 
 ## The heart of the app
-The application uses the MATLAB audio libraries, specifically, in order to carry out measurements that can be correlated correctly, it is necessary to emit and receive simultaneously, for this MATLAB has the <a href="https://www.mathworks.com/help/audio/ref/audioplayerrecorder-system-object.html">audioPlayerRecorder</a> object.
+The software uses the MATLAB audio libraries, specifically, to transmit and receive simultaneously, the MATLAB <a href="https://www.mathworks.com/help/audio/ref/audioplayerrecorder-system-object.html">audioPlayerRecorder</a> object is used.
 
 In order to make use of the <a href="https://www.mathworks.com/help/audio/ref/audioplayerrecorder-system-object.html">audioPlayerRecorder</a> object, it is necessary to have a sound card that supports 'Full-Duplex'. All external audio cards have 'Full-Duplex', but the audio cards integrated in computers, especially laptops, do not usually have support for this object. A|Lab will notify you with a window if your hardware is not compatible, if you have several sound cards and one that is valid, enter the configuration and select it.
+
+```
+TODO: FIGURE MISSING
+```
 
 If you are only opening a previous project, you can ignore the warning.
 
 ## Examples
 
-The program allows you to save the entire measurement project to be able to open it again at any time and observe or export the results. To be able to test the program quickly, some examples of impedance tube and transmission tube measurements have been included, open them from the top menu `File->Load project`
+The program allows you to save the entire measurement project to be able to open it again at any time and view or export the results. To be able to test the program quickly, some examples of impedance tube and transmission tube measurements have been included, open them from the top menu `File->Load project`.
 
 # Table of contents
 
@@ -63,9 +67,9 @@ Options:
 <a id="calibrate-latency"></a>
 ### Calibrate latency
 
-All systems have an internal latency from when the signal is emitted until it is received. With this calibration, the latency of the system is obtained and the correction is applied in all measurements, the delay added by the system in the received signal is eliminated.
+All systems have an internal latency from the moment the signal is emitted until it is received. With this calibration, the latency of the system is obtained and the correction is applied in all measurements, the delay added by the system in the received signal is eliminated.
 
-To calibrate the latency you must connect a cable directly from an output of the sound card to an input. Once connected, choose the channels where the cable is connected and press `Calibrate latency`, the program will make 5 measurements to calculate the latency of the system.
+To calibrate the latency you must connect a cable directly from an output of the sound card to an input. Once connected, choose the channels where the cable is connected and press `Calibrate latency`. The program will make 5 measurements to calculate the latency of the system.
 
 ```matlab
 % Latency calculation
@@ -89,9 +93,9 @@ sigReceived = [sigReceived(DelaySamples+1:end);zeros(DelaySamples,1)];
 <a id="calibrate-inputs"></a>
 ### Calibrate inputs
 
-To obtain the correct level in the measurements calculations, it is necessary to obtain a factor that applies a dimension to the input signal. It is the calibration factor and it is obtained from a source that has a known acoustic pressure, usually a calibrator emits 94dB but if you have another type of calibrator you can indicate the reference level.
+To obtain the correct level in the measurements calculations, it is necessary to obtain a factor that applies a dimension to the input signal. This is the calibration factor and it is obtained from a source that has a known acoustic pressure. Usually a calibrator emits 94dB but if you have another type of calibrator you can indicate the reference level.
 
-You must place the calibrator on the microphone you want to calibrate and click on 'Calibrate channel N', the calibration factor will automatically be calculated. This calibration factor is automatically applied to all measured signals.
+You must place the calibrator on the microphone you want to calibrate and click on `Calibrate channel N`, the calibration factor will automatically be calculated. This calibration factor is automatically applied to all measured signals.
 
 ```matlab
 % Calculate calibration factor
@@ -114,11 +118,11 @@ sigReceived = sigReceived ./  K; % Calibrated signal
 
 <a id="signal-panel"></a>
 ## Signal panel
-The signal selection panel appears in all types of measurement. 
+The signal selection panel appears in all types of measurements. 
 
 <img width="225" src="http://jmrplens.com/GitHub_ALab/sweepPanel.png"></img>
 
-The available signals depend on the chosen measurement method, in total the following signals are available:
+The available signals depend on the chosen measurement method. The following signals are available:
   * MLS
     ```matlab
           fs; % Sample rate
@@ -163,15 +167,19 @@ The available signals depend on the chosen measurement method, in total the foll
     ```
   * Custom signal
 
-    If you want to use a different signal you can import it by selecting it within this panel. The signal must be in a text file with a single column, the sampling frequency will be the one defined in the application configuration.
+    If you want to use a different signal you can import it by selecting it within this panel. The signal must be in a text file with a single column, the sampling frequency will be the one defined in the software configuration.
 
 All signals are normalized between 0.5 and -0.5: `signal = (signal/max(abs(signal)))*0.5;`.
 
 <a id="information-panel"></a>
 ## Information panel
- <img align="left" height="150" src="http://jmrplens.com/GitHub_ALab/infoPanel.png"></img> This panel always appears in the bar on the right. Displays the relevant information of the audio device.
+ <img align="left" height="150" src="http://jmrplens.com/GitHub_ALab/infoPanel.png"></img> This panel always appears in the bar on the right. It displays the relevant information of the audio device.
  If latency calibration has not been performed it shows the approximate value (`SamplesPerFrame/SampleRate*2`) but this value is not applied to signals.
- If at least one input of the device has been calibrated, the word 'Yes' will be displayed in the input calibration.
+ If at least one input of the device has been calibrated, the word 'Yes' and the channels numbers will be displayed in the input calibration.
+
+ ```
+ TODO: UPDATE FIGURE
+ ```
 
 <p><br /><br /></p>
 
@@ -210,12 +218,12 @@ This method is only to perform some tests and see some options that MATLAB offer
 The impedance tube method is detailed in <a href="https://www.iso.org/standard/22851.html">ISO 10534-2</a>. In this program the measure has been implemented in full compliance with the standard.
 
 The steps to follow (also indicated in the standard) are:
-  1. (Recommended) Calibrate the inputs to be used (<a href="#device-setup-and-calibration">configuration panel</a>).
+  1. Calibrate the inputs to be used (<a href="#device-setup-and-calibration">configuration panel</a>). (_Recommended_)
   1. Enter tube parameters (distances and shape).
-  1. (Recommended) Calibrate the impedance tube system (if you use two microphones).
+  1. Calibrate the impedance tube system (if you use two microphones). (_Recommended_)
   1. Measure.
  
-The results obtained are: Reflection factor, Sound absorption coefficient, Specific acoustic impedance, Impulse response (two inputs) and Frequency response (two inputs).
+The results obtained are: reflection factor, sound absorption coefficient, specific acoustic impedance, impulse response (two inputs) and frequency response (two inputs).
 
 The side panels that appear in this measurement method are:
 * **Left panel**: Here you can open the tube parameter configuration panel, measure with one or two microphones or review the information of the measurement method.
@@ -229,7 +237,7 @@ The side panels that appear in this measurement method are:
 <a id="tube-parameters"></a>
 ### Tube parameters
 
-Enter in this panel the geometric parameters of the tube: Shape, distance between microphones and distance to the sample. Remember, measure all dimensions correctly.
+Enter in this panel the geometric parameters of the tube: shape, distance between microphones and distance to the sample. Make sure all distances are measured correctly. Also do not forget to indicate the shape of the tube.
 
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeParametersc.png" width="49%"></img>
@@ -250,7 +258,7 @@ First place the microphone in position [A] and press `Measure [A]`, then move th
 
 To measure with two microphones simply place the microphones in position and press `Measure`.
 You can also calibrate the system by pressing `Calibrate (optional)`.
-Once the measurement is finished, press the button `Calculate results` in the right panel. If you have calibrated the tube, the program will ask you if you want to use the calibration.
+Once the measurement is finished, press the button `Calculate results` in the right panel. If you have calibrated the tube, the software will ask you if you want to use the calibration.
 
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeTwoMicc.png" width="49%"></img>
@@ -259,7 +267,7 @@ Once the measurement is finished, press the button `Calculate results` in the ri
 <a id="calibrate-the-impedance-tube-system"></a>
 #### Calibrate the impedance tube system
 
-To calibrate the system, two measurements must be made, one with the normal microphone position, and one with the swapped position.
+To calibrate the system, two measurements must be made, one with the normal microphone position, and other one with the swapped position.
 It is also advisable to have an absorbent material to slightly reduce reflections.
 The figures indicate the position of the microphones for each measurement, make sure they are located correctly before measuring. Once the two measurements are finished, click on `Return`.
 
@@ -279,7 +287,7 @@ In this panel you will see a summary of the measurement method and the limitatio
 ### Results visualization
 
 In the results panel you can choose the resolution of the FFT and see the standard results.
-You can also export the results in text file to use it in another software, also export the graphs (PNG, JPG, PDF, EPS or FIG) or see the impulse and frequency responses of the measured signals.
+You can also export the results in text file to use it in another software, also export the graphs (PNG, JPG, PDF, EPS or FIG) or see the impulse and frequency responses of the measured signals (`Other results` button).
 
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeResultsc.png" width="49%"></img>
@@ -302,17 +310,17 @@ You can also export the results in text file to use it in another software, also
   - [Single results visualization](#single-results-visualization-1)
 ---
 
-The transmission tube method is detailed in <a href="https://www.astm.org/Standards/E2611.htm">ASTM 2611</a>. In the program the method is implemented to be able to use one, two or four microphones. It is necessary to have a transmission tube with 4 microphone positions, two on the upstream side and two on the downstream side.
+The transmission tube method is detailed in <a href="https://www.astm.org/Standards/E2611.htm">ASTM 2611</a>. In the software the method is implemented to be able to use one, two or four microphones. It is necessary to have a transmission tube with 4 microphone positions, two on the upstream side and two on the downstream side.
 
 If the sample to be analyzed is symmetrical, only an anechoic end of the tube is necessary. If it is not symmetric, it will be necessary to measure with anechoic end and with rigid end.
 
 The steps to follow (also indicated in the standard) are:
-  1. (Recommended) Calibrate the inputs to be used (<a href="#device-setup-and-calibration">configuration panel</a>).
+  1. Calibrate the inputs to be used (<a href="#device-setup-and-calibration">configuration panel</a>). (_Recommended_)
   1. Enter tube parameters (distances and shape).
-  1. (Recommended) Calibrate the impedance tube system (if you use four microphones).
+  1. Calibrate the impedance tube system (if you use four microphones). (_Recommended_)
   1. Measure with anechoic end and, if not symmetrical sample, repeat measure with rigid end.
  
-The results obtained are: Transmission loss, Impedance, Transmission factor, Reflection factor, Propagation wavenamber in material, Sound absorption coefficient, Impulse response and Frequency response (four inputs) for anechoic and rigid end measure (if not symmetrical).
+The results obtained are: transmission loss, characteristic impedance, transmission factor, reflection factor, propagation wavenamber in material, sound absorption coefficient, impulse response and frequency response (four inputs) for anechoic and rigid end measure (if not symmetrical).
 
 The side panels that appear in this measurement method are:
 * **Left panel**: Here you can open the tube parameter configuration panel, measure with one, two or four microphones or review the information of the measurement method.
@@ -324,9 +332,8 @@ The side panels that appear in this measurement method are:
 
 <a id="tube-parameters-1"></a>
 ### Tube parameters
-The panel shown here is used to enter the geometric parameters of the tube. Remember, measure all dimensions correctly.
+The panel shown here is used to enter the geometric parameters of the tube. Make sure all distances are measured correctly. Also do not forget to indicate the shape of the tube.
 
-Also do not forget to indicate the shape of the tube.
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeParams.png" width="49%"></img>
 </p>
@@ -335,7 +342,7 @@ Also do not forget to indicate the shape of the tube.
 ### One-Mic measurement
 If you only have one microphone, it is possible to perform the measurement by placing the microphone in each of the measurement positions.
 
-Each time a measurement is made the graph is updated to show which parts have already been measured. Also, if you are not sure that you have carried out the measurement correctly, you can delete it and do it again.
+Every time a measurement is made the graph is updated to show which parts have already been measured. Also, if you are not sure that you have carried out the measurement correctly, you can delete it and do it again.
 
 <p align="center">
 <img src="http://jmrplens.com/GitHub_ALab/TransmissionTube1mic.png" width="49%"></img>
@@ -364,10 +371,10 @@ This option also allows you to calibrate the microphones before making the measu
 #### Calibrate the transmission tube system
 
 To calibrate the transmission tube, it is necessary to perform 4 measurements:
-1. Take a measurement first with all four microphones in their normal positions. (Microphone order: [1,2,3,4])
-2. Swap the position of microphone 1 with microphone 2 (the other microphones leave them in their normal position) and measure. (Microphone order: [2,1,3,4])
-3. Put the microphone 2 back to its position, put the microphone 1 in the position of the microphone 3 and the microphone 3 in the position of the microphone 1. Measure. (Microphone order: [3,2,1,4])
-4. Put the microphone 3 back to its position, put the microphone 1 in the position of the microphone 4 and the microphone 4 in the position of the microphone 1. Measure. (Microphone order: [4,2,3,1])
+1. Take a measurement first with all four microphones in their normal positions. (Microphones order: [1,2,3,4])
+2. Swap the position of microphone 1 with microphone 2 (leave the other microphones in their normal position) and measure. (Microphones order: [2,1,3,4])
+3. Put the microphone 2 back to its position, put the microphone 1 in the position of the microphone 3 and the microphone 3 in the position of the microphone 1. Measure. (Microphones order: [3,2,1,4])
+4. Put the microphone 3 back to its position, put the microphone 1 in the position of the microphone 4 and the microphone 4 in the position of the microphone 1. Measure. (Microphones order: [4,2,3,1])
 
 Once all the measurements are finished, click on `Done`.
 
@@ -387,7 +394,7 @@ In this panel you will see some information about the measurement method.
 ### Results visualization
 When you press the button to calculate results, you will see this panel with the different results defined by the standard. If you click on any of the graphs you can see it larger.
 
-Also, if you press the button for other results, you will be able to see the impulse response and the frequency response of all the measurements.
+Also, if you press the button for other results, you will be able to see the impulse and frequency response of all the measurements.
 
 In the main results panel you can choose to export all the results in text file, export the **transfer matrix** (T11,T12,T21,T22) in text file for your own calculations or if you click on any graph you go to: [Single result](#single-results-visualization-1).
 
@@ -410,14 +417,14 @@ In addition, in the case of absorption and reflection, by clicking on their grap
 <a id="robot-measurement-upv"></a>
 ## Robot measurement (Polytechnic University of Valencia)
 
-This measurement method is exclusive to the [Polytechnic University of Valencia](https://www.upv.es/index-en.html), it performs acoustic measurements using a three-axis robot for automated measurements in a plane or volume. A page dedicated to this method will be included soon to facilitate use by students and researchers at the [Polytechnic University of Valencia](https://www.upv.es/index-en.html).
+This measurement method is exclusive to the [Polytechnic University of Valencia](https://www.upv.es/index-en.html). It performs acoustic measurements by using a three-axis robot for automated measurements in a plane or volume. A page dedicated to this method will be included soon to facilitate use by students and researchers at the [Polytechnic University of Valencia](https://www.upv.es/index-en.html).
 
 ---
 
 <a id="standards-and-theory"></a>
 # Standards and theory
 
-Here is a table of the sources used for the implementation of some of the measures implemented in the software.
+Here is a table of the sources used for the implementation of some of the measures developed in the software.
 
 | Measure | Source | M-File |
 |:-------:|:------:|:------:|
@@ -432,7 +439,7 @@ Here is a table of the sources used for the implementation of some of the measur
 <a href="https://www.upv.es"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoUPV2.png"></img></a><a href="https://www.gandia.upv.es/"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoEPSG2.png"></img></a><a href="https://igic.webs.upv.es/"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoIGICb.png"></img></a>***Thanks to the [Waves in Complex Media group](https://igic.webs.upv.es/index.php?option=com_content&view=article&id=22), [Higher Polytechnic School of Gandia](https://www.upv.es/contenidos/CGANDIA/index-en.html) and [Polytechnic University of Valencia](https://www.upv.es/index-en.html) for providing the necessary equipment to develop some of the measures implemented in the software and for all the support in time, meet, talk and discussions.***
 
 <p><br /></p>
-Special mention for <a href="https://www.linkedin.com/in/gabrielebunkheila/">Gabriele Bunkheila</a> and <a href="https://www.linkedin.com/in/carsanbo/">Carlos Sanchis</a> for helping me answer my questions with MATLAB, those long email threads are very valuable.
+Special mention for <a href="https://www.linkedin.com/in/gabrielebunkheila/">Gabriele Bunkheila</a> and <a href="https://www.linkedin.com/in/carsanbo/">Carlos Sanchis</a> for helping me and answer my questions with MATLAB, those long email threads are very valuable.
 
 ---
 
