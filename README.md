@@ -32,6 +32,7 @@ The software allows you to save the entire measurement project to be able to ope
 
 ---
 - [General](#general)
+  - [Open the software](#open-and-use)
   - [Device setup and calibration](#device-setup-and-calibration)
   - [Signal panel](#signal-panel)
   - [Information panel](#information-panel)
@@ -47,6 +48,15 @@ The software allows you to save the entire measurement project to be able to ope
 
 <a id="general"></a>
 # General
+
+<a id="open-and-use"></a>
+## Open the software
+
+To open the software you have two options:
+
+- **Source code**: download the source code and run the ALab.mlapp file with MATLAB.
+
+- **Installable package**: to install the software within matlab download the package from [here](https://github.com/jmrplens/A-Lab/releases).
 
 <a id="device-setup-and-calibration"></a>
 ## Device setup and calibration
