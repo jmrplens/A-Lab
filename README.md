@@ -435,8 +435,8 @@ Here is a table of the sources used for the implementation of some of the measur
 
 | Measure | Source | M-File |
 |:-------:|:------:|:------:|
-| Impedance tube | <a href="https://www.iso.org/standard/22851.html">ISO 10534-2:1998</a>   | `calculationsTwoMicISO105342.m`|
-| Transmission tube | <a href="https://www.astm.org/Standards/E2611.htm">ASTM 2611 - 19</a> | `calculationsFourMicASTM2611.m` |
+| Impedance tube | <a href="https://www.iso.org/standard/22851.html">ISO 10534-2:1998</a>   | [`calculationsTwoMicISO105342.m`](https://github.com/jmrplens/A-Lab/blob/a1b295f4ee735112b9b5fa40cdbf009617be4e14/include/Measurements/Impedance%20Tube%20-%20ISO%2010534-2/calculationsTwoMicISO105342.m)|
+| Transmission tube | <a href="https://www.astm.org/Standards/E2611.htm">ASTM 2611 - 19</a> | [`calculationsFourMicASTM2611.m`](https://github.com/jmrplens/A-Lab/blob/a1b295f4ee735112b9b5fa40cdbf009617be4e14/include/Measurements/Transmission%20Tube%20-%20ASTM%202611/calculationsFourMicASTM2611.m) |
 
 ---
 
