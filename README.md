@@ -17,11 +17,11 @@ The software has been made with the collaboration of the [Waves in Complex Media
 ## The heart of the app
 The software uses the MATLAB audio libraries, specifically, to transmit and receive simultaneously, the MATLAB <a href="https://www.mathworks.com/help/audio/ref/audioplayerrecorder-system-object.html">audioPlayerRecorder</a> object is used.
 
-In order to make use of the <a href="https://www.mathworks.com/help/audio/ref/audioplayerrecorder-system-object.html">audioPlayerRecorder</a> object, it is necessary to have a sound card that supports 'Full-Duplex'. All external audio cards have 'Full-Duplex', but the audio cards integrated in computers, especially laptops, do not usually have support for this object. A|Lab will notify you with a window if your hardware is not compatible, if you have several sound cards and one that is valid, enter the configuration and select it.
+In order to make use of the <a href="https://www.mathworks.com/help/audio/ref/audioplayerrecorder-system-object.html">audioPlayerRecorder</a> object, it is necessary to have a sound card that supports 'Full-Duplex'. All external audio cards have 'Full-Duplex', but the audio cards integrated in computers, especially laptops, do not usually have support for this object. A|Lab will notify you with a window if your hardware is not compatible (image below), if you have several sound cards and one that is valid, enter the configuration and select it.
 
-```
-TODO: FIGURE MISSING
-```
+<p align="center">
+<img src="http://jmrplens.com/GitHub_ALab/noFullDuplex.png" width="40%"></img> 
+</p>
 
 If you are only opening a previous project, you can ignore the warning.
 
@@ -173,13 +173,9 @@ All signals are normalized between 0.5 and -0.5: `signal = (signal/max(abs(signa
 
 <a id="information-panel"></a>
 ## Information panel
- <img align="left" height="150" src="http://jmrplens.com/GitHub_ALab/infoPanel.png"></img> This panel always appears in the bar on the right. It displays the relevant information of the audio device.
+ <img align="left" height="150" src="http://jmrplens.com/GitHub_ALab/infoPanelc.png"></img> This panel always appears in the bar on the right. It displays the relevant information of the audio device.
  If latency calibration has not been performed it shows the approximate value (`SamplesPerFrame/SampleRate*2`) but this value is not applied to signals.
  If at least one input of the device has been calibrated, the word 'Yes' and the channels numbers will be displayed in the input calibration.
-
- ```
- TODO: UPDATE FIGURE
- ```
 
 <p><br /><br /></p>
 
