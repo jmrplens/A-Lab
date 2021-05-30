@@ -1,5 +1,4 @@
-
-# ** Under construction (will be published in a few days)
+<img src="http://jmrplens.com/GitHub_ALab/NOTICE.png" width="90%"></img> 
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate?hosted_button_id=BLP3R6VGYJB4Q) 
 [![Donate](https://img.shields.io/badge/Donate-Ko--fi-brightgreen?color=ff5f5f)](https://ko-fi.com/jmrplens) 
