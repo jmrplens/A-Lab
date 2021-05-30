@@ -52,7 +52,7 @@ The software allows you to save the entire measurement project to be able to ope
 <a id="open-and-use"></a>
 ## Open the software
 
-To open the program you have two options:
+To open the software you have two options:
 
 - **Source code**: download the source code and run the ALab.mlapp file with MATLAB.
 
