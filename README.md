@@ -4,6 +4,8 @@
 [![Donate](https://img.shields.io/badge/Donate-Ko--fi-brightgreen?color=ff5f5f)](https://ko-fi.com/jmrplens) 
 [![Sponsor](https://img.shields.io/badge/Sponsor-GitHub-brightgreen?color=ea4aaa)](https://github.com/sponsors/jmrplens) 
 
+[![View A|Lab on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/93180-a-lab)
+
 # A|Lab
 Matlab-based software for measuring acoustic parameters and experiments (**A**coustic **Lab**oratory).
 
