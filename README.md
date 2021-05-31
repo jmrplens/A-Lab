@@ -6,6 +6,15 @@
 
 [![View A|Lab on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/93180-a-lab)
 
+#### GitHub and code info
+
+![Lines of code](https://img.shields.io/tokei/lines/github/jmrplens/A-Lab?label=Lines%20of%20code&style=plastic)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/jmrplens/A-Lab)
+![GitHub](https://img.shields.io/github/license/jmrplens/A-Lab)
+![GitHub top language](https://img.shields.io/github/languages/top/jmrplens/A-Lab)
+[![GitHub issues](https://img.shields.io/github/issues/jmrplens/A-Lab)](https://github.com/jmrplens/A-Lab/issues)
+
+
 # A|Lab
 Matlab-based software for measuring acoustic parameters and experiments (**A**coustic **Lab**oratory).
 
