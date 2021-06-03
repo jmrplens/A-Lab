@@ -13,7 +13,7 @@
 ![GitHub](https://img.shields.io/github/license/jmrplens/A-Lab)
 ![GitHub top language](https://img.shields.io/github/languages/top/jmrplens/A-Lab)
 [![GitHub issues](https://img.shields.io/github/issues/jmrplens/A-Lab)](https://github.com/jmrplens/A-Lab/issues)
-
+![GitHub Repo stars](https://img.shields.io/github/stars/jmrplens/A-Lab?style=social)
 
 # A|Lab
 Matlab-based software for measuring acoustic parameters and experiments (**A**coustic **Lab**oratory).
