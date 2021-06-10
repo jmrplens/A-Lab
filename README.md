@@ -75,7 +75,7 @@ To open the software you have two options:
 In this panel you can configure the parameters of the audio device and calibrate the system latency (useful for correcting delays in the impulse response). Also, if you have a microphone calibrator, you can calibrate each input channel.
 
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/devicepanelc.png" width="70%"></img> 
+<img src="http://jmrplens.com/GitHub_ALab/devicepanelc.png?" width="70%"></img> 
 </p>
 
 Options:
@@ -213,7 +213,7 @@ This method is only to perform some tests and see some options that MATLAB offer
 **Tip**: If you have calibrated the input of a microphone, take a measurement with the calibrator attached to the microphone. You can see the measured value in the 'Sound Pressure Level' panel, it must be the same as the reference value of the calibrator. This way you will check that everything is working correctly.
 
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/GeneralMethod.png" width="49%"></img>
+<img src="http://jmrplens.com/GitHub_ALab/GeneralMethod.png?" width="49%"></img>
 </p>
 
 <br>
