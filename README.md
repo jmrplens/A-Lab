@@ -1,4 +1,4 @@
-<img src="http://jmrplens.com/GitHub_ALab/NOTICE.png" width="90%"></img> 
+<img src="https://jmrplens.com/GitHub_ALab/NOTICE.png" width="90%"></img> 
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate?hosted_button_id=BLP3R6VGYJB4Q) 
 [![Donate](https://img.shields.io/badge/Donate-Ko--fi-brightgreen?color=ff5f5f)](https://ko-fi.com/jmrplens) 
@@ -30,7 +30,7 @@ The software uses the MATLAB audio libraries, specifically, to transmit and rece
 In order to make use of the <a href="https://www.mathworks.com/help/audio/ref/audioplayerrecorder-system-object.html">audioPlayerRecorder</a> object, it is necessary to have a sound card that supports 'Full-Duplex'. All external audio cards have 'Full-Duplex', but the audio cards integrated in computers, especially laptops, do not usually have support for this object. A|Lab will notify you with a window if your hardware is not compatible (image below), if you have several sound cards and one that is valid, enter the configuration and select it.
 
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/noFullDuplex.png" width="40%"></img> 
+<img src="https://jmrplens.com/GitHub_ALab/noFullDuplex.png" width="40%"></img> 
 </p>
 
 If you are only opening a previous project, you can ignore the warning.
@@ -75,7 +75,7 @@ To open the software you have two options:
 In this panel you can configure the parameters of the audio device and calibrate the system latency (useful for correcting delays in the impulse response). Also, if you have a microphone calibrator, you can calibrate each input channel.
 
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/devicepanelc.png?" width="70%"></img> 
+<img src="https://jmrplens.com/GitHub_ALab/devicepanelc.png?" width="70%"></img> 
 </p>
 
 Options:
@@ -140,7 +140,7 @@ sigReceived = sigReceived ./  K; % Calibrated signal
 ## Signal panel
 The signal selection panel appears in all types of measurements. 
 
-<img width="225" src="http://jmrplens.com/GitHub_ALab/sweepPanel.png"></img>
+<img width="225" src="https://jmrplens.com/GitHub_ALab/sweepPanel.png"></img>
 
 The available signals depend on the chosen measurement method. The following signals are available:
   * MLS
@@ -193,7 +193,7 @@ All signals are normalized between 0.5 and -0.5: `signal = (signal/max(abs(signa
 
 <a id="information-panel"></a>
 ## Information panel
- <img align="left" height="150" src="http://jmrplens.com/GitHub_ALab/infoPanelc.png"></img> This panel always appears in the bar on the right. It displays the relevant information of the audio device.
+ <img align="left" height="150" src="https://jmrplens.com/GitHub_ALab/infoPanelc.png"></img> This panel always appears in the bar on the right. It displays the relevant information of the audio device.
  If latency calibration has not been performed it shows the approximate value (`SamplesPerFrame/SampleRate*2`) but this value is not applied to signals.
  If at least one input of the device has been calibrated, the word 'Yes' and the channels numbers will be displayed in the input calibration.
 
@@ -213,7 +213,7 @@ This method is only to perform some tests and see some options that MATLAB offer
 **Tip**: If you have calibrated the input of a microphone, take a measurement with the calibrator attached to the microphone. You can see the measured value in the 'Sound Pressure Level' panel, it must be the same as the reference value of the calibrator. This way you will check that everything is working correctly.
 
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/GeneralMethod.png?" width="49%"></img>
+<img src="https://jmrplens.com/GitHub_ALab/GeneralMethod.png?" width="49%"></img>
 </p>
 
 <br>
@@ -247,7 +247,7 @@ The side panels that appear in this measurement method are:
 
 |Left panel|Right panel|
 |:-------:|:------:|
-|<img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeLeftc.png" width="50%"></img>|<img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeRightc.png" width="50%"></img>|
+|<img src="https://jmrplens.com/GitHub_ALab/ImpedanceTubeLeftc.png" width="50%"></img>|<img src="https://jmrplens.com/GitHub_ALab/ImpedanceTubeRightc.png" width="50%"></img>|
 
 
 <a id="tube-parameters"></a>
@@ -256,7 +256,7 @@ The side panels that appear in this measurement method are:
 Enter in this panel the geometric parameters of the tube: shape, distance between microphones and distance to the sample. Make sure all distances are measured correctly. Also do not forget to indicate the shape of the tube.
 
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeParametersc.png" width="49%"></img>
+<img src="https://jmrplens.com/GitHub_ALab/ImpedanceTubeParametersc.png" width="49%"></img>
 </p>
 
 <a id="one-mic-measurement"></a>
@@ -266,7 +266,7 @@ If you only have one microphone, you can perform the measurement through this pa
 First place the microphone in position [A] and press `Measure [A]`, then move the microphone to position [B] and press `Measure [B]`. Finally, click on the button `Calculate results` in the right panel.
 
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeOneMicc.png" width="49%"></img>
+<img src="https://jmrplens.com/GitHub_ALab/ImpedanceTubeOneMicc.png" width="49%"></img>
 </p>
 
 <a id="two-mic-measurement"></a>
@@ -277,7 +277,7 @@ You can also calibrate the system by pressing `Calibrate (optional)`.
 Once the measurement is finished, press the button `Calculate results` in the right panel. If you have calibrated the tube, the software will ask you if you want to use the calibration.
 
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeTwoMicc.png" width="49%"></img>
+<img src="https://jmrplens.com/GitHub_ALab/ImpedanceTubeTwoMicc.png" width="49%"></img>
 </p>
 
 <a id="calibrate-the-impedance-tube-system"></a>
@@ -288,7 +288,7 @@ It is also advisable to have an absorbent material to slightly reduce reflection
 The figures indicate the position of the microphones for each measurement, make sure they are located correctly before measuring. Once the two measurements are finished, click on `Return`.
 
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeTwoMicCalc.png" width="49%"></img>
+<img src="https://jmrplens.com/GitHub_ALab/ImpedanceTubeTwoMicCalc.png" width="49%"></img>
 </p>
 
 <a id="information-panel-1"></a>
@@ -296,7 +296,7 @@ The figures indicate the position of the microphones for each measurement, make 
 In this panel you will see a summary of the measurement method and the limitations according to the tube parameters.
 
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeInformationc.png" width="49%"></img>
+<img src="https://jmrplens.com/GitHub_ALab/ImpedanceTubeInformationc.png" width="49%"></img>
 </p>
 
 <a id="results-visualization"></a>
@@ -306,7 +306,7 @@ In the results panel you can choose the resolution of the FFT and see the standa
 You can also export the results in text file to use it in another software, also export the graphs (PNG, JPG, PDF, EPS or FIG) or see the impulse and frequency responses of the measured signals (`Other results` button).
 
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/ImpedanceTubeResultsc.png" width="49%"></img>
+<img src="https://jmrplens.com/GitHub_ALab/ImpedanceTubeResultsc.png" width="49%"></img>
 </p>
 
 <br>
@@ -344,14 +344,14 @@ The side panels that appear in this measurement method are:
 
 |Left panel|Right panel|
 |:-------:|:------:|
-|<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeLeft.png" width="50%"></img>|<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeRightc.png" width="50%"></img>|
+|<img src="https://jmrplens.com/GitHub_ALab/TransmissionTubeLeft.png" width="50%"></img>|<img src="https://jmrplens.com/GitHub_ALab/TransmissionTubeRightc.png" width="50%"></img>|
 
 <a id="tube-parameters-1"></a>
 ### Tube parameters
 The panel shown here is used to enter the geometric parameters of the tube. Make sure all distances are measured correctly. Also do not forget to indicate the shape of the tube.
 
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeParams.png" width="49%"></img>
+<img src="https://jmrplens.com/GitHub_ALab/TransmissionTubeParams.png" width="49%"></img>
 </p>
 
 <a id="one-mic-measurement-1"></a>
@@ -361,7 +361,7 @@ If you only have one microphone, it is possible to perform the measurement by pl
 Every time a measurement is made the graph is updated to show which parts have already been measured. Also, if you are not sure that you have carried out the measurement correctly, you can delete it and do it again.
 
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/TransmissionTube1mic.png" width="49%"></img>
+<img src="https://jmrplens.com/GitHub_ALab/TransmissionTube1mic.png" width="49%"></img>
 </p>
 
 <a id="two-mic-measurement-1"></a>
@@ -371,7 +371,7 @@ If you have two microphones you can perform the measurement faster than the one 
 The first measurement is made with the microphones in positions `A` and `B` (upstream) and the second in `C` and `D` (downstream), that is why microphone 1 corresponds to position `A` and `C`, and microphone 2 to position `B` and `D`.
 
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/TransmissionTube2mic.png" width="49%"></img>
+<img src="https://jmrplens.com/GitHub_ALab/TransmissionTube2mic.png" width="49%"></img>
 </p>
 
 <a id="four-mic-measurement"></a>
@@ -380,7 +380,7 @@ This is the best option, it reduces errors when manipulating the position of the
 
 This option also allows you to calibrate the microphones before making the measurement.
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/TransmissionTube4mic.png" width="49%"></img>
+<img src="https://jmrplens.com/GitHub_ALab/TransmissionTube4mic.png" width="49%"></img>
 </p>
 
 <a id="calibrate-the-transmission-tube-system"></a>
@@ -395,7 +395,7 @@ To calibrate the transmission tube, it is necessary to perform 4 measurements:
 Once all the measurements are finished, click on `Done`.
 
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/TransmissionTube4micCal.png" width="49%"></img>
+<img src="https://jmrplens.com/GitHub_ALab/TransmissionTube4micCal.png" width="49%"></img>
 </p>
 
 <a id="measure-information"></a>
@@ -403,7 +403,7 @@ Once all the measurements are finished, click on `Done`.
 In this panel you will see some information about the measurement method.
 
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeInformation.png" width="49%"></img>
+<img src="https://jmrplens.com/GitHub_ALab/TransmissionTubeInformation.png" width="49%"></img>
 </p>
 
 <a id="results-visualization-1"></a>
@@ -415,7 +415,7 @@ Also, if you press the button for other results, you will be able to see the imp
 In the main results panel you can choose to export all the results in text file, export the **transfer matrix** (T11,T12,T21,T22) in text file for your own calculations or if you click on any graph you go to: [Single result](#single-results-visualization-1).
 
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeResults.png" width="49%"></img>
+<img src="https://jmrplens.com/GitHub_ALab/TransmissionTubeResults.png" width="49%"></img>
 </p>
 
 <a id="single-results-visualization-1"></a>
@@ -424,9 +424,9 @@ In the main results panel you can choose to export all the results in text file,
 In this panel you will be able to see the larger graph and you will also be able to export only that result to a text file or graphic file. 
 In addition, in the case of absorption and reflection, by clicking on their graphs you will see both the hard-backed calculation that defines the ASTM 2611 standard and the anechoic-backed calculation (from transfer matrix method).
 
-<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeSingleTrans.png" width="32%"></img>
-<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeSingleReflection.png?" width="32%"></img>
-<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeSingleAbsorption.png" width="32%"></img>
+<img src="https://jmrplens.com/GitHub_ALab/TransmissionTubeSingleTrans.png" width="32%"></img>
+<img src="https://jmrplens.com/GitHub_ALab/TransmissionTubeSingleReflection.png?" width="32%"></img>
+<img src="https://jmrplens.com/GitHub_ALab/TransmissionTubeSingleAbsorption.png" width="32%"></img>
 
 <br>
 
@@ -452,7 +452,7 @@ Here is a table of the sources used for the implementation of some of the measur
 <a id="supports"></a>
 # Supports
 
-<a href="https://www.upv.es"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoUPV2.png"></img></a><a href="https://www.gandia.upv.es/"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoEPSG2.png"></img></a><a href="https://igic.webs.upv.es/"><img align="Left" height="100" src="http://jmrplens.com/GitHub_ALab/LogoIGICb.png"></img></a>***Thanks to the [Waves in Complex Media group](https://igic.webs.upv.es/index.php?option=com_content&view=article&id=22), [Higher Polytechnic School of Gandia](https://www.upv.es/contenidos/CGANDIA/index-en.html) and [Polytechnic University of Valencia](https://www.upv.es/index-en.html) for providing the necessary equipment to develop some of the measures implemented in the software and for all the support in time, meet, talk and discussions.***
+<a href="https://www.upv.es"><img align="Left" height="100" src="https://jmrplens.com/GitHub_ALab/LogoUPV2.png"></img></a><a href="https://www.gandia.upv.es/"><img align="Left" height="100" src="https://jmrplens.com/GitHub_ALab/LogoEPSG2.png"></img></a><a href="https://igic.webs.upv.es/"><img align="Left" height="100" src="https://jmrplens.com/GitHub_ALab/LogoIGICb.png"></img></a>***Thanks to the [Waves in Complex Media group](https://igic.webs.upv.es/index.php?option=com_content&view=article&id=22), [Higher Polytechnic School of Gandia](https://www.upv.es/contenidos/CGANDIA/index-en.html) and [Polytechnic University of Valencia](https://www.upv.es/index-en.html) for providing the necessary equipment to develop some of the measures implemented in the software and for all the support in time, meet, talk and discussions.***
 
 <p><br /></p>
 Special mention for <a href="https://www.linkedin.com/in/gabrielebunkheila/">Gabriele Bunkheila</a> and <a href="https://www.linkedin.com/in/carsanbo/">Carlos Sanchis</a> for helping me and answer my questions with MATLAB, those long email threads are very valuable.
