@@ -213,7 +213,7 @@ This method is only to perform some tests and see some options that MATLAB offer
 **Tip**: If you have calibrated the input of a microphone, take a measurement with the calibrator attached to the microphone. You can see the measured value in the 'Sound Pressure Level' panel, it must be the same as the reference value of the calibrator. This way you will check that everything is working correctly.
 
 <p align="center">
-<img src="http://jmrplens.com/GitHub_ALab/GeneralMethod.png?" width="49%"></img>
+<img src="http://jmrplens.com/GitHub_ALab/GeneralMethod.png" width="49%"></img>
 </p>
 
 <br>
