@@ -8,12 +8,12 @@
 
 #### GitHub and code info
 
-![Lines of code](https://img.shields.io/tokei/lines/github/jmrplens/A-Lab?label=Lines%20of%20code&style=plastic)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/jmrplens/A-Lab)
-![GitHub](https://img.shields.io/github/license/jmrplens/A-Lab)
+[![Lines of code](https://img.shields.io/tokei/lines/github/jmrplens/A-Lab?label=Lines%20of%20code&style=plastic)](https://github.com/jmrplens/A-Lab/graphs/code-frequency)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/jmrplens/A-Lab)](https://github.com/jmrplens/A-Lab/releases)
+[![GitHub](https://img.shields.io/github/license/jmrplens/A-Lab)](https://github.com/jmrplens/A-Lab/blob/9708e9ecb9b033e2b26cbf3849685fe69a16ad9f/LICENSE)
 ![GitHub top language](https://img.shields.io/github/languages/top/jmrplens/A-Lab)
 [![GitHub issues](https://img.shields.io/github/issues/jmrplens/A-Lab)](https://github.com/jmrplens/A-Lab/issues)
-![GitHub Repo stars](https://img.shields.io/github/stars/jmrplens/A-Lab?style=social)
+[![GitHub Repo stars](https://img.shields.io/github/stars/jmrplens/A-Lab?style=social)](https://github.com/jmrplens/A-Lab/stargazers)
 
 # A|Lab
 Matlab-based software for measuring acoustic parameters and experiments (**A**coustic **Lab**oratory).
