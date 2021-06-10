@@ -425,7 +425,7 @@ In this panel you will be able to see the larger graph and you will also be able
 In addition, in the case of absorption and reflection, by clicking on their graphs you will see both the hard-backed calculation that defines the ASTM 2611 standard and the anechoic-backed calculation (from transfer matrix method).
 
 <img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeSingleTrans.png" width="32%"></img>
-<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeSingleReflection.png" width="32%"></img>
+<img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeSingleReflection.png?" width="32%"></img>
 <img src="http://jmrplens.com/GitHub_ALab/TransmissionTubeSingleAbsorption.png" width="32%"></img>
 
 <br>
