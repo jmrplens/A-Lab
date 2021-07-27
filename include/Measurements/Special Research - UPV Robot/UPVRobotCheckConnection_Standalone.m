@@ -6,7 +6,7 @@ function done = UPVRobotCheckConnection_Standalone()
 % Robot parameters
 
 % URL to connect with robot
-URL = 'http://192.168.4.1/movexyz';
+URL = 'http://172.18.224.210/movexyz';
 
 % =================================================
 % Options for web response

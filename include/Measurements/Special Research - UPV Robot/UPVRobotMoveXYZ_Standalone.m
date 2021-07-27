@@ -34,9 +34,14 @@ function response = UPVRobotMoveXYZ_Standalone(varargin)
 % Robot parameters
 
 % URL to connect with robot
-URLmove = 'http://192.168.4.1/movexyz';
-URLpos = 'http://192.168.4.1/position';
-URLstatus = 'http://192.168.4.1/status';
+URLmove = 'http://172.18.224.210/movexyz';
+URLpos = 'http://172.18.224.210/position';
+URLstatus = 'http://172.18.224.210/status';
+
+% M5Stack URL to check position
+M5StackURLX = 'http://172.18.224.211/';
+M5StackURLY1 = 'http://172.18.224.212/';
+M5StackURLY2 = 'http://172.18.224.213/';
 
 % Size - each axis (mm)
 XLen = 3000;
@@ -189,20 +194,61 @@ end
 %s.axis.UNLOCK = true;
 
 % =================================================
-% Structure to JSON
-json = jsonencode(s);
-
-% =================================================
 % Options for web response
 options = weboptions("Timeout",5,'ContentType','json');
 
 % =================================================
 % Homing (if needed)
 % Send commands
-response = webread(URLstatus,options);
-if response.STATUS.X.HOMING_PENDENT || response.STATUS.Y.HOMING_PENDENT || response.STATUS.Z.HOMING_PENDENT
-    UPVRobotHoming_Standalone;
+resRobot = webread(URLstatus,options);
+if resRobot.STATUS.X.HOMING_PENDENT || resRobot.STATUS.Y.HOMING_PENDENT || resRobot.STATUS.Z.HOMING_PENDENT
+   UPVRobotHoming_Standalone;
 end
+
+% =================================================
+% Check position and correct
+
+% X
+response = webread(M5StackURLX,options);
+M5_Xpos = response.ENCODER.ENCODER_POS;
+
+if abs(resRobot.STATUS.X.POS - M5_Xpos) > 0.25
+    s.axis.X.ACTUAL_POSITION = M5_Xpos;
+end
+
+% Y1
+response = webread(M5StackURLY1,options);
+M5_Y1pos = response.ENCODER.ENCODER_POS;
+
+if abs(resRobot.STATUS.Y.POS1 - M5_Y1pos) > 0.25
+    s.axis.Y.ACTUAL_POSITION_1 = M5_Y1pos;
+end
+
+% Y2
+response = webread(M5StackURLY2,options);
+M5_Y2pos = response.ENCODER.ENCODER_POS;
+
+if abs(resRobot.STATUS.Y.POS2 - M5_Y2pos) > 0.25
+    s.axis.Y.ACTUAL_POSITION_2 = M5_Y2pos;
+end
+
+
+% =================================================
+% Clear if no movement
+% response = webread(URLpos,options);
+% if abs(response.STATUS.X.POS-X) < 0.1 && isfield(s.axis,'X')
+%     s.axis = rmfield(s.axis,'X');
+% end
+% if abs(response.STATUS.Y.POS-Y) < 0.1 && isfield(s.axis,'Y')
+%     s.axis = rmfield(s.axis,'Y');
+% end
+% if abs(response.STATUS.Z.POS-Z) < 0.1 && isfield(s.axis,'Z')
+%     s.axis = rmfield(s.axis,'Z');
+% end
+
+% =================================================
+% Structure to JSON
+json = jsonencode(s);
 
 % =================================================
 % Send command and check status
