@@ -2,6 +2,10 @@ function  UPVRobotUncrossRestrictedArea(app,iter)
 % Copyright (C) Jose M. Requena Plens 
 % joreple@upv.es - jmrplens.github.io
 
+if ~app.ExtVar.UPVRobot.Restricted
+    return;
+end
+
 % Destination coord
 coord = app.ExtVar.UPVRobot.MeasurePoints(iter,:);
 xdes = round(coord(1),5);

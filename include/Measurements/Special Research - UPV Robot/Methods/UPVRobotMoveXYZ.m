@@ -9,7 +9,7 @@ function response = UPVRobotMoveXYZ(app,varargin)
 %
 % Or
 %
-% UPVRobotMoveXYZ(app,15,20,,60) % Move all axis
+% UPVRobotMoveXYZ(app,15,20,60) % Move all axis
 % UPVRobotMoveXYZ(app,15,20) % Move X and Y
 % UPVRobotMoveXYZ(app,15) % Only move X
 % UPVRobotMoveXYZ(app,[],[],15) % Only move Z
@@ -139,12 +139,83 @@ if ~isempty(X) || ~isempty(Y) || ~isempty(Z)
 end
 
 % =================================================
-% Structure to JSON
-json = jsonencode(s);
-
-% =================================================
 % Options for web response
 options = weboptions("Timeout",20,'ContentType','json');
+
+% =================================================
+% Check position and correct
+resRobot = UPVRobotSendCommand(app,[],options);
+% X
+try
+    response = webread(app.ExtVar.UPVRobot.M5StackURLX,options);
+    M5_Xpos = response.ENCODER.ENCODER_POS;
+    if abs(resRobot.STATUS.X.POS - M5_Xpos) > 0.25
+        s.axis.X.ACTUAL_POSITION = M5_Xpos;
+    end
+    app.ExtVar.UPVRobot.M5StackXAttempt = 0;
+catch
+    app.ExtVar.UPVRobot.M5StackXAttempt = app.ExtVar.UPVRobot.M5StackXAttempt + 1;
+end
+
+% Y1
+try
+    response = webread(app.ExtVar.UPVRobot.M5StackURLY1,options);
+    M5_Y1pos = response.ENCODER.ENCODER_POS;
+    if abs(resRobot.STATUS.Y.POS1 - M5_Y1pos) > 0.25
+        s.axis.Y.ACTUAL_POSITION_1 = M5_Y1pos;
+    end
+    app.ExtVar.UPVRobot.M5StackY1Attempt = 0;
+catch
+    app.ExtVar.UPVRobot.M5StackY1Attempt = app.ExtVar.UPVRobot.M5StackY1Attempt + 1;
+end
+
+% Y2
+try
+    response = webread(app.ExtVar.UPVRobot.M5StackURLY2,options);
+    M5_Y2pos = response.ENCODER.ENCODER_POS;
+    if abs(resRobot.STATUS.Y.POS2 - M5_Y2pos) > 0.25
+        s.axis.Y.ACTUAL_POSITION_2 = M5_Y2pos;
+    end
+    app.ExtVar.UPVRobot.M5StackY2Attempt = 0;
+catch
+    app.ExtVar.UPVRobot.M5StackY2Attempt = app.ExtVar.UPVRobot.M5StackY2Attempt + 1;
+end
+
+if app.ExtVar.UPVRobot.M5StackXAttempt >= 10 ...
+        || app.ExtVar.UPVRobot.M5StackY1Attempt >= 10 ...
+        || app.ExtVar.UPVRobot.M5StackY2Attempt >= 10
+    msg = 'M5 Stack problem in axis: ';
+    if app.ExtVar.UPVRobot.M5StackXAttempt >= 10
+        msg = [msg,'X '];
+        app.ExtVar.UPVRobot.M5StackXAttempt = 0;
+    end
+    if app.ExtVar.UPVRobot.M5StackY1Attempt >= 10
+        msg = [msg,'Y1 '];
+        app.ExtVar.UPVRobot.M5StackY1Attempt = 0;
+    end
+    if app.ExtVar.UPVRobot.M5StackY2Attempt >= 10
+        msg = [msg,'Y2 '];
+        app.ExtVar.UPVRobot.M5StackY2Attempt = 0;
+    end
+    uialert(app.ALabUIFigure,msg,'M5 Stack error');
+end
+
+% =================================================
+% Clear if no movement
+% response = webread(URLpos,options);
+% if abs(response.STATUS.X.POS-X) < 0.1 && isfield(s.axis,'X')
+%     s.axis = rmfield(s.axis,'X');
+% end
+% if abs(response.STATUS.Y.POS-Y) < 0.1 && isfield(s.axis,'Y')
+%     s.axis = rmfield(s.axis,'Y');
+% end
+% if abs(response.STATUS.Z.POS-Z) < 0.1 && isfield(s.axis,'Z')
+%     s.axis = rmfield(s.axis,'Z');
+% end
+
+% =================================================
+% Structure to JSON
+json = jsonencode(s);
 
 % =================================================
 % Send command and check status

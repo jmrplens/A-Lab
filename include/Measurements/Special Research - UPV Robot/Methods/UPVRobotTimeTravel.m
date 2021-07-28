@@ -103,18 +103,18 @@ if isempty(tZ); tZ = 0; end
 % Other times
 
 % Run time  move script (estimated with profile app)
-tDelays(1) = 0.3;
+tDelays(1) = 1.05;
 % Run time for the other commands in measureUPVRobot
 tDelays(2) = 0.2;
 % Signal time
 try
 [~,timesig] = signalGenerator(app);
 catch
-    timesig = 1;
+    timesig = 1.035;
 end
 tDelays(3) = timesig * app.Averages;
 % Measure OutIn subroutines
-tDelays(4) = 0.3;
+tDelays(4) = 0.25;
 % Audio hardware latency time
 if isempty(app.Latency)
     tDelays(5) = app.SamplesPerFrame/app.SampleRate * 2;
@@ -122,7 +122,7 @@ else
     tDelays(5) = app.Latency;
 end
 % Robot hardware delay
-tDelays(6) = 0.05*4 + 0.1;
+tDelays(6) = 0.55;
 % Pause in evry coord
 pauseeach = 1;
 

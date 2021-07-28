@@ -44,6 +44,7 @@ end
 app.ExtVar.UPVRobot.Pause = 0;
 app.ExtVar.UPVRobot.Stop = 0;
 
+
 % ====================================================
 % Homing
 UPVRobotHoming(app);
@@ -115,8 +116,8 @@ runt = tic();
 % ====================================================
 % Loop that goes through each coordinate
 
+profile on
 tic
-%profile on
 for ii = idx:totalcoords
 
     % ====================================================
@@ -169,8 +170,10 @@ for ii = idx:totalcoords
             coords(ii+1,1),coords(ii+1,2),coords(ii+1,3));
         drawnow
     end
-    
+   
+    % Bending stop
     pause(1)
+    
     % ==================
     % Measure and store
     UPVRobotAudioOutIn(app,ii);
@@ -205,8 +208,8 @@ for ii = idx:totalcoords
     UPVRobotPauseStop(app,[],[])
     
 end
-%profile viewer
 t = toc
+profile viewer
 Time = UPVRobotTimeTravel(app)
 diffff = t - Time
 
