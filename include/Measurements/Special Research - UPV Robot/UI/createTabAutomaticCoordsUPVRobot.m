@@ -227,52 +227,52 @@ app.ExtVar.UPVRobot.ZRes = app.ExtUI.UPVRobotPointsZEditField.Value;
 if app.ExtUI.UPVRobotPointsXEditField.Value==1
     app.ExtUI.UPVRobotEndXEditField.Enable = 'off';
     app.ExtVar.UPVRobot.XEnd = app.ExtUI.UPVRobotOriginXEditField.Value;
-    % Restrict
-    app.ExtUI.UPVRobotEndXEditFieldRestrict.Enable = 'off';
-    app.ExtUI.UPVRobotOriginXEditFieldRestrict.Enable = 'off';
-    app.ExtUI.UPVRobotOriginXEditFieldRestrict.Value = 0;
-    app.ExtUI.UPVRobotEndXEditFieldRestrict.Value = app.ExtVar.UPVRobot.XLen;
-    app.ExtVar.UPVRobot.XNaNOri = 0;
-    app.ExtVar.UPVRobot.XNaNEnd = app.ExtVar.UPVRobot.XLen;
+%     % Restrict
+%     app.ExtUI.UPVRobotEndXEditFieldRestrict.Enable = 'off';
+%     app.ExtUI.UPVRobotOriginXEditFieldRestrict.Enable = 'off';
+%     app.ExtUI.UPVRobotOriginXEditFieldRestrict.Value = 0;
+%     app.ExtUI.UPVRobotEndXEditFieldRestrict.Value = app.ExtVar.UPVRobot.XLen;
+%     app.ExtVar.UPVRobot.XNaNOri = 0;
+%     app.ExtVar.UPVRobot.XNaNEnd = app.ExtVar.UPVRobot.XLen;
 else
     app.ExtVar.UPVRobot.XEnd = app.ExtUI.UPVRobotEndXEditField.Value;
     app.ExtUI.UPVRobotEndXEditField.Enable = 'on';
-    app.ExtUI.UPVRobotEndXEditFieldRestrict.Enable = 'on';
-    app.ExtUI.UPVRobotOriginXEditFieldRestrict.Enable = 'on';
+%     app.ExtUI.UPVRobotEndXEditFieldRestrict.Enable = 'on';
+%     app.ExtUI.UPVRobotOriginXEditFieldRestrict.Enable = 'on';
 end
 % Y
 if app.ExtUI.UPVRobotPointsYEditField.Value==1
     app.ExtUI.UPVRobotEndYEditField.Enable = 'off';
     app.ExtVar.UPVRobot.YEnd = app.ExtUI.UPVRobotOriginYEditField.Value;
-    % Restrict
-    app.ExtUI.UPVRobotEndYEditFieldRestrict.Enable = 'off';
-    app.ExtUI.UPVRobotOriginYEditFieldRestrict.Enable = 'off';
-    app.ExtUI.UPVRobotOriginYEditFieldRestrict.Value = 0;
-    app.ExtUI.UPVRobotEndYEditFieldRestrict.Value = app.ExtVar.UPVRobot.YLen;
-    app.ExtVar.UPVRobot.YNaNOri = 0;
-    app.ExtVar.UPVRobot.YNaNEnd = app.ExtVar.UPVRobot.YLen;
+%     % Restrict
+%     app.ExtUI.UPVRobotEndYEditFieldRestrict.Enable = 'off';
+%     app.ExtUI.UPVRobotOriginYEditFieldRestrict.Enable = 'off';
+%     app.ExtUI.UPVRobotOriginYEditFieldRestrict.Value = 0;
+%     app.ExtUI.UPVRobotEndYEditFieldRestrict.Value = app.ExtVar.UPVRobot.YLen;
+%     app.ExtVar.UPVRobot.YNaNOri = 0;
+%     app.ExtVar.UPVRobot.YNaNEnd = app.ExtVar.UPVRobot.YLen;
 else
     app.ExtVar.UPVRobot.YEnd = app.ExtUI.UPVRobotEndYEditField.Value;
     app.ExtUI.UPVRobotEndYEditField.Enable = 'on';
-    app.ExtUI.UPVRobotEndYEditFieldRestrict.Enable = 'on';
-    app.ExtUI.UPVRobotOriginYEditFieldRestrict.Enable = 'on';
+%     app.ExtUI.UPVRobotEndYEditFieldRestrict.Enable = 'on';
+%     app.ExtUI.UPVRobotOriginYEditFieldRestrict.Enable = 'on';
 end
 % Z
 if app.ExtUI.UPVRobotPointsZEditField.Value==1
     app.ExtUI.UPVRobotEndZEditField.Enable = 'off';
     app.ExtVar.UPVRobot.ZEnd = app.ExtUI.UPVRobotOriginZEditField.Value;
     % Restric
-    app.ExtUI.UPVRobotEndZEditFieldRestrict.Enable = 'off';
-    app.ExtUI.UPVRobotOriginZEditFieldRestrict.Enable = 'off';
-    app.ExtUI.UPVRobotOriginZEditFieldRestrict.Value = 0;
-    app.ExtUI.UPVRobotEndZEditFieldRestrict.Value = app.ExtVar.UPVRobot.ZLen;
-    app.ExtVar.UPVRobot.ZNaNOri = 0;
-    app.ExtVar.UPVRobot.ZNaNEnd = app.ExtVar.UPVRobot.ZLen;
+%     app.ExtUI.UPVRobotEndZEditFieldRestrict.Enable = 'off';
+%     app.ExtUI.UPVRobotOriginZEditFieldRestrict.Enable = 'off';
+%     app.ExtUI.UPVRobotOriginZEditFieldRestrict.Value = 0;
+%     app.ExtUI.UPVRobotEndZEditFieldRestrict.Value = app.ExtVar.UPVRobot.ZLen;
+%     app.ExtVar.UPVRobot.ZNaNOri = 0;
+%     app.ExtVar.UPVRobot.ZNaNEnd = app.ExtVar.UPVRobot.ZLen;
 else
     app.ExtVar.UPVRobot.ZEnd = app.ExtUI.UPVRobotEndZEditField.Value;
     app.ExtUI.UPVRobotEndZEditField.Enable = 'on';
-    app.ExtUI.UPVRobotEndZEditFieldRestrict.Enable = 'on';
-    app.ExtUI.UPVRobotOriginZEditFieldRestrict.Enable = 'on';
+%     app.ExtUI.UPVRobotEndZEditFieldRestrict.Enable = 'on';
+%     app.ExtUI.UPVRobotOriginZEditFieldRestrict.Enable = 'on';
 end
 
 % Origin-End

@@ -67,9 +67,9 @@ if app.ExtVar.UPVRobot.Restricted
     
     colorRestrict = [0.2039,0.2863,0.3686];
     alphaRestrict = 0.7;
-    if XRes==1; XNaNOri = XOri; end
-    if YRes==1; YNaNOri = YOri; end
-    if ZRes==1; ZNaNOri = ZOri; end
+    %if XRes==1; XNaNOri = XOri; end
+    %if YRes==1; YNaNOri = YOri; end
+    %if ZRes==1; ZNaNOri = ZOri; end
 
     % Bottom (X,Y)
     if XNaNOri~=XNaNEnd && YNaNOri~=YNaNEnd %&& YRes>1 %&& XRes>1

@@ -116,7 +116,7 @@ runt = tic();
 % ====================================================
 % Loop that goes through each coordinate
 
-profile on
+%profile on
 tic
 for ii = idx:totalcoords
 
@@ -209,7 +209,7 @@ for ii = idx:totalcoords
     
 end
 t = toc
-profile viewer
+%profile viewer
 Time = UPVRobotTimeTravel(app)
 diffff = t - Time
 

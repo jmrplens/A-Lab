@@ -39,8 +39,20 @@ if idxF ~= app.ExtVar.UPVRobotPostProcess.Single_FreqIndex || isempty(app.ExtVar
 end
 % ===========================================
 % Get response for selected frequency
-FL = scatteredInterpolant(x(:),y(:),z(:),app.ExtVar.UPVRobotPostProcess.PointsSPL_SingleFreq(:),'natural','none');
-Zb = FL(X,Y,Z);
+if numel(unique(Z)) == 1 % XY
+    FL = scatteredInterpolant(x(:),y(:),app.ExtVar.UPVRobotPostProcess.PointsSPL_SingleFreq(:),'natural','none');
+    Zb = FL(X,Y);
+elseif numel(unique(X)) == 1 % YZ
+    FL = scatteredInterpolant(y(:),z(:),app.ExtVar.UPVRobotPostProcess.PointsSPL_SingleFreq(:),'natural','none');
+    Zb = FL(Y,Z);
+elseif numel(unique(Y)) == 1 % XZ
+    FL = scatteredInterpolant(x(:),z(:),app.ExtVar.UPVRobotPostProcess.PointsSPL_SingleFreq(:),'natural','none');
+    Zb = FL(X,Z);
+else
+    FL = scatteredInterpolant(x(:),y(:),z(:),app.ExtVar.UPVRobotPostProcess.PointsSPL_SingleFreq(:),'natural','none');
+    Zb = FL(X,Y,Z);
+    
+end
 
 % ===========================================
 % Axes
@@ -51,19 +63,36 @@ cla(ax,'reset')
 % Plot surface/slice
 data = 20*log10(abs(Zb)/2e-5);
 sliceType = app.ExtVar.UPVRobotPostProcess.Slice2DType;
-switch sliceType
-    case 'XY'
-        % Slice value
-        sv = app.ExtVar.UPVRobotPostProcess.SliceXY_Zvalue;
-        app.ExtVar.UPVRobotPostProcess.SurfacePlot = slice(ax,X,Y,Z,data,[],[],sv,'linear');
-    case 'XZ'
-        % Slice value
-        sv = app.ExtVar.UPVRobotPostProcess.SliceXZ_Yvalue;
-        app.ExtVar.UPVRobotPostProcess.SurfacePlot = slice(ax,X,Y,Z,data,[],sv,[],'linear');
-    case 'YZ'
-        % Slice value
-        sv = app.ExtVar.UPVRobotPostProcess.SliceYZ_Xvalue;
-        app.ExtVar.UPVRobotPostProcess.SurfacePlot = slice(ax,X,Y,Z,data,sv,[],[],'linear');
+
+
+if numel(size(data)) == 3
+    switch sliceType
+        case 'XY'
+            % Slice value
+            sv = app.ExtVar.UPVRobotPostProcess.SliceXY_Zvalue;
+            app.ExtVar.UPVRobotPostProcess.SurfacePlot = slice(ax,X,Y,Z,data,[],[],sv,'linear');
+        case 'XZ'
+            % Slice value
+            sv = app.ExtVar.UPVRobotPostProcess.SliceXZ_Yvalue;
+            app.ExtVar.UPVRobotPostProcess.SurfacePlot = slice(ax,X,Y,Z,data,[],sv,[],'linear');
+        case 'YZ'
+            % Slice value
+            sv = app.ExtVar.UPVRobotPostProcess.SliceYZ_Xvalue;
+            app.ExtVar.UPVRobotPostProcess.SurfacePlot = slice(ax,X,Y,Z,data,sv,[],[],'linear');
+    end
+    
+else
+    switch sliceType
+        case 'XY'
+            % Slice value
+            app.ExtVar.UPVRobotPostProcess.SurfacePlot = pcolor(ax,X,Y,data);
+        case 'XZ'
+            % Slice value
+            app.ExtVar.UPVRobotPostProcess.SurfacePlot = pcolor(ax,X,Z,data);
+        case 'YZ'
+            % Slice value
+            app.ExtVar.UPVRobotPostProcess.SurfacePlot = pcolor(ax,Y,Z,data);
+    end
 end
 hold(ax,'on')
 
