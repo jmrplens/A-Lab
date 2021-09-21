@@ -201,6 +201,9 @@ function UPVRobotImportFileCoords(~,~,app)
 
 if FileName ~= 0
     
+    % Update userpath
+    userpath(PathName);
+    
     app.ExtVar.UPVRobot.RouteOptimized = 0;
     
     % File path

@@ -190,6 +190,8 @@ app.ExtUI.UPVRobotPostProcessRunInfo.Text = ' ';
 % Logic for path
 if ~isempty(app.ExtVar.UPVRobotPostProcess.FolderPath) % If path
     if exist(app.ExtVar.UPVRobotPostProcess.FolderPath,'dir')
+        % Update userpath
+        userpath(app.ExtVar.UPVRobotPostProcess.FolderPath);
         folders=regexp(app.ExtVar.UPVRobotPostProcess.FolderPath,filesep,'split');
         app.ExtUI.UPVRobotPostProcessFolderLabel.Text = ['Path: ..',filesep,folders{end},filesep];
         
@@ -207,8 +209,11 @@ if ~isempty(app.ExtVar.UPVRobotPostProcess.FolderPath) % If path
 end
 
 function UPVRobotPostProcessPathpushed(~,~,app)
-selpath = uigetdir(app.RootPath,'Project folder');
+selpath = uigetdir(userpath,'Project folder');
 if selpath~=0
+    % Update userpath
+    userpath(selpath);
+    
     folders=regexp(selpath,filesep,'split');
     app.ExtUI.UPVRobotPostProcessFolderLabel.Text = ['Path: ..',filesep,folders{end},filesep];
     app.ExtVar.UPVRobotPostProcess.FolderPath = selpath;

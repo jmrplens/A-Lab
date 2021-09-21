@@ -115,7 +115,7 @@ switch type
         IR = real(ifft(fft(Ins) ./ fft(Outs)));
         tIR = (1:length(IR))'/Fs;
 end
-
+H = H(:); % To column
 
 % Get idx for 30Khz (max frequency stored) - idx=nfft-1 to store all data
 idxF = find(f>=30e3,1,'first');
@@ -156,7 +156,7 @@ app.ExtVar.UPVRobotPostProcess.FreqVec = ...
 app.ExtVar.UPVRobotPostProcess.FreqVec.Data = f(1:idxF);
 
 app.ExtVar.UPVRobotPostProcess.FreqResp = matfile([folderDataPath,'Frequency_Responses.mat'],'Writable',true);
-app.ExtVar.UPVRobotPostProcess.FreqResp.Data = H(1:idxF);
+app.ExtVar.UPVRobotPostProcess.FreqResp.Data(1:idxF,1) = H(1:idxF);
 
 app.ExtVar.UPVRobotPostProcess.IRResp = matfile([folderDataPath,'Impulse_Responses.mat'],'Writable',true);
 app.ExtVar.UPVRobotPostProcess.IRResp.Data = IR;
@@ -216,7 +216,7 @@ switch app.ExtVar.UPVRobotPostProcess.Multicore
             myMatfileINS = matfile([myFname,'_Signal.mat'], 'Writable', true); % Input signal temporal file
             % Initialize matfiles
             myMatfileINS.data = zeros(size(Ins,1),1);
-            myMatfileH.data = complex(zeros(size(H(1:idxF),1),1),0);
+            myMatfileH.data = complex(zeros(idxF,1),0);
             myMatfileIR.data = zeros(size(IR,1),1);
             myMatfileINS.gotResult = false(1, N);
             myMatfileH.gotResult = false(1, N);
@@ -257,13 +257,15 @@ switch app.ExtVar.UPVRobotPostProcess.Multicore
                     % Impulse Response
                     IR = impzest(Outs,Ins);
                     Haux = freqz(IR,1,nfft,Fs);
-                    matfileObjIR.data(:,n) = IR; % Store impulse response
-                    matfileObjH.data(:,n) = Haux(2:idxF+1); % Store frequency response
+                    matfileObjIR.data(:,n) = IR(:); % Store impulse response
+                    auxH = Haux(2:idxF+1);
+                    matfileObjH.data(:,n) = auxH(:); % Store frequency response
                 otherwise
                     Haux = fft(Ins,2.*nfft).';
                     IR = real(ifft(fft(Ins) ./ fft(Outs)));
-                    matfileObjIR.data(:,n) = IR; % Store impulse response
-                    matfileObjH.data(:,n) = 2*Haux(2:idxF+1); % Store frequency response
+                    matfileObjIR.data(:,n) = IR(:); % Store impulse response
+                    auxH = 2*Haux(2:idxF+1);
+                    matfileObjH.data(:,n) = auxH(:); % Store frequency response
             end
             fclose(fid);
             
@@ -271,6 +273,7 @@ switch app.ExtVar.UPVRobotPostProcess.Multicore
             send(q,'Step 1 of 2. Calculating parameters...');
             
         end
+        
         
         % Step 5. Concatenate results
         app.ExtUI.UPVRobotPostProcessRunInfo.Text = 'Join results...';
@@ -367,9 +370,9 @@ switch app.ExtVar.UPVRobotPostProcess.Multicore
             fclose(fid);
             
             % Store data
-            app.ExtVar.UPVRobotPostProcess.InSignal.Data(:,n) = Ins;
-            app.ExtVar.UPVRobotPostProcess.IRResp.Data(:,n) = IR;
-            app.ExtVar.UPVRobotPostProcess.FreqResp.Data(:,n) = H;
+            app.ExtVar.UPVRobotPostProcess.InSignal.Data(:,n) = Ins(:);
+            app.ExtVar.UPVRobotPostProcess.IRResp.Data(:,n) = IR(:);
+            app.ExtVar.UPVRobotPostProcess.FreqResp.Data(:,n) = H(:);
             
             % Show progress
             update_progress('Processing...');
