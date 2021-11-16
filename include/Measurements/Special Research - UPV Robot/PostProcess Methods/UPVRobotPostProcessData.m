@@ -91,11 +91,14 @@ fclose(fid);
 t = aux(:,1);
 Outs = aux(:,2);
 
+
 % Process first measure and get data for initialize variables
 % Load measure 'n'
 fid = fopen(sprintf('%s%d.txt',folder,1));
 Ins = cell2mat(textscan(fid, '%f'));
 fclose(fid);
+
+Outs = Outs(1:numel(Ins));
 
 switch type
     case {'mls','sweep'}
@@ -126,7 +129,7 @@ end
 % Store/Initialize results variables/mats
 app.ExtUI.UPVRobotPostProcessRunInfo.Text = 'Making needed data files. Please, wait...';
 drawnow
-N = length(coords);
+N = size(coords,1);
 %H = [H,zeros(size(H,1),N-1)];
 %Ins = [Ins,zeros(size(Ins,1),N-1)];
 %IR = [IR,zeros(size(IR,1),N-1)];
@@ -164,6 +167,7 @@ app.ExtVar.UPVRobotPostProcess.IRResp.Data = IR;
 app.ExtVar.UPVRobotPostProcess.IRtime = matfile([folderDataPath,'Time_Array_forImpulse.mat'],'Writable',true);
 app.ExtVar.UPVRobotPostProcess.IRtime.Data = tIR;
 
+if N > 1
 switch app.ExtVar.UPVRobotPostProcess.Multicore
     
     case 1 % Multicore
@@ -379,7 +383,7 @@ switch app.ExtVar.UPVRobotPostProcess.Multicore
             
         end
 end
-
+end
 % Close progress box
 close(d)
 
