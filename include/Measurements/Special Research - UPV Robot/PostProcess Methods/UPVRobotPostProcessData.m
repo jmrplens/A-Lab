@@ -98,7 +98,12 @@ fid = fopen(sprintf('%s%d.txt',folder,1));
 Ins = cell2mat(textscan(fid, '%f'));
 fclose(fid);
 
-Outs = Outs(1:numel(Ins));
+% **Correct this, temporaly solved, ugly
+if length(Outs) > length(Ins)
+    Outs = Outs(1:numel(Ins));
+else
+    Ins = Ins(1:numel(Outs));
+end
 
 switch type
     case {'mls','sweep'}
