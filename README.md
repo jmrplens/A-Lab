@@ -286,7 +286,7 @@ It is also advisable to have an absorbent material to slightly reduce reflection
 The figures indicate the position of the microphones for each measurement, make sure they are located correctly before measuring. Once the two measurements are finished, click on `Return`.
 
 <p align="center">
-<img src="https://jmrplens.com/GitHub_ALab/ImpedanceTubeTwoMicCalc.png" width="49%"></img>
+<img src="https://github.com/jmrplens/A-Lab/blob/dbb199b9b21f8d9c1c09294dc0a1d02a9d33d509/.github/images/ImpedanceTubeTwoMicCalc.png" width="49%"></img>
 </p>
 
 <a id="information-panel-1"></a>
@@ -294,7 +294,7 @@ The figures indicate the position of the microphones for each measurement, make 
 In this panel you will see a summary of the measurement method and the limitations according to the tube parameters.
 
 <p align="center">
-<img src="https://jmrplens.com/GitHub_ALab/ImpedanceTubeInformationc.png" width="49%"></img>
+<img src="https://github.com/jmrplens/A-Lab/blob/dbb199b9b21f8d9c1c09294dc0a1d02a9d33d509/.github/images/ImpedanceTubeInformationc.png" width="49%"></img>
 </p>
 
 <a id="results-visualization"></a>
@@ -304,7 +304,7 @@ In the results panel you can choose the resolution of the FFT and see the standa
 You can also export the results in text file to use it in another software, also export the graphs (PNG, JPG, PDF, EPS or FIG) or see the impulse and frequency responses of the measured signals (`Other results` button).
 
 <p align="center">
-<img src="https://jmrplens.com/GitHub_ALab/ImpedanceTubeResultsc.png" width="49%"></img>
+<img src="https://github.com/jmrplens/A-Lab/blob/dbb199b9b21f8d9c1c09294dc0a1d02a9d33d509/.github/images/ImpedanceTubeResultsc.png" width="49%"></img>
 </p>
 
 <br>
@@ -342,14 +342,14 @@ The side panels that appear in this measurement method are:
 
 |Left panel|Right panel|
 |:-------:|:------:|
-|<img src="https://jmrplens.com/GitHub_ALab/TransmissionTubeLeft.png" width="50%"></img>|<img src="https://jmrplens.com/GitHub_ALab/TransmissionTubeRightc.png" width="50%"></img>|
+|<img src="https://github.com/jmrplens/A-Lab/blob/dbb199b9b21f8d9c1c09294dc0a1d02a9d33d509/.github/images/TransmissionTubeLeft.png" width="50%"></img>|<img src="https://github.com/jmrplens/A-Lab/blob/dbb199b9b21f8d9c1c09294dc0a1d02a9d33d509/.github/images/TransmissionTubeRightc.png" width="50%"></img>|
 
 <a id="tube-parameters-1"></a>
 ### Tube parameters
 The panel shown here is used to enter the geometric parameters of the tube. Make sure all distances are measured correctly. Also do not forget to indicate the shape of the tube.
 
 <p align="center">
-<img src="https://jmrplens.com/GitHub_ALab/TransmissionTubeParams.png" width="49%"></img>
+<img src="https://github.com/jmrplens/A-Lab/blob/dbb199b9b21f8d9c1c09294dc0a1d02a9d33d509/.github/images/TransmissionTubeParams.png" width="49%"></img>
 </p>
 
 <a id="one-mic-measurement-1"></a>
@@ -359,7 +359,7 @@ If you only have one microphone, it is possible to perform the measurement by pl
 Every time a measurement is made the graph is updated to show which parts have already been measured. Also, if you are not sure that you have carried out the measurement correctly, you can delete it and do it again.
 
 <p align="center">
-<img src="https://jmrplens.com/GitHub_ALab/TransmissionTube1mic.png" width="49%"></img>
+<img src="https://github.com/jmrplens/A-Lab/blob/dbb199b9b21f8d9c1c09294dc0a1d02a9d33d509/.github/images/TransmissionTube1mic.png" width="49%"></img>
 </p>
 
 <a id="two-mic-measurement-1"></a>
@@ -369,7 +369,7 @@ If you have two microphones you can perform the measurement faster than the one 
 The first measurement is made with the microphones in positions `A` and `B` (upstream) and the second in `C` and `D` (downstream), that is why microphone 1 corresponds to position `A` and `C`, and microphone 2 to position `B` and `D`.
 
 <p align="center">
-<img src="https://jmrplens.com/GitHub_ALab/TransmissionTube2mic.png" width="49%"></img>
+<img src="https://github.com/jmrplens/A-Lab/blob/dbb199b9b21f8d9c1c09294dc0a1d02a9d33d509/.github/images/TransmissionTube2mic.png" width="49%"></img>
 </p>
 
 <a id="four-mic-measurement"></a>
@@ -378,7 +378,7 @@ This is the best option, it reduces errors when manipulating the position of the
 
 This option also allows you to calibrate the microphones before making the measurement.
 <p align="center">
-<img src="https://jmrplens.com/GitHub_ALab/TransmissionTube4mic.png" width="49%"></img>
+<img src="https://github.com/jmrplens/A-Lab/blob/dbb199b9b21f8d9c1c09294dc0a1d02a9d33d509/.github/images/TransmissionTube4mic.png" width="49%"></img>
 </p>
 
 <a id="calibrate-the-transmission-tube-system"></a>
@@ -393,7 +393,7 @@ To calibrate the transmission tube, it is necessary to perform 4 measurements:
 Once all the measurements are finished, click on `Done`.
 
 <p align="center">
-<img src="https://jmrplens.com/GitHub_ALab/TransmissionTube4micCal.png" width="49%"></img>
+<img src="https://github.com/jmrplens/A-Lab/blob/dbb199b9b21f8d9c1c09294dc0a1d02a9d33d509/.github/images/TransmissionTube4micCal.png" width="49%"></img>
 </p>
 
 <a id="measure-information"></a>
@@ -401,7 +401,7 @@ Once all the measurements are finished, click on `Done`.
 In this panel you will see some information about the measurement method.
 
 <p align="center">
-<img src="https://jmrplens.com/GitHub_ALab/TransmissionTubeInformation.png" width="49%"></img>
+<img src="https://github.com/jmrplens/A-Lab/blob/dbb199b9b21f8d9c1c09294dc0a1d02a9d33d509/.github/images/TransmissionTubeInformation.png" width="49%"></img>
 </p>
 
 <a id="results-visualization-1"></a>
@@ -413,7 +413,7 @@ Also, if you press the button for other results, you will be able to see the imp
 In the main results panel you can choose to export all the results in text file, export the **transfer matrix** (T11,T12,T21,T22) in text file for your own calculations or if you click on any graph you go to: [Single result](#single-results-visualization-1).
 
 <p align="center">
-<img src="https://jmrplens.com/GitHub_ALab/TransmissionTubeResults.png" width="49%"></img>
+<img src="https://github.com/jmrplens/A-Lab/blob/dbb199b9b21f8d9c1c09294dc0a1d02a9d33d509/.github/images/TransmissionTubeResults.png" width="49%"></img>
 </p>
 
 <a id="single-results-visualization-1"></a>
@@ -422,9 +422,9 @@ In the main results panel you can choose to export all the results in text file,
 In this panel you will be able to see the larger graph and you will also be able to export only that result to a text file or graphic file. 
 In addition, in the case of absorption and reflection, by clicking on their graphs you will see both the hard-backed calculation that defines the ASTM 2611 standard and the anechoic-backed calculation (from transfer matrix method).
 
-<img src="https://jmrplens.com/GitHub_ALab/TransmissionTubeSingleTrans.png" width="32%"></img>
-<img src="https://jmrplens.com/GitHub_ALab/TransmissionTubeSingleReflection.png?" width="32%"></img>
-<img src="https://jmrplens.com/GitHub_ALab/TransmissionTubeSingleAbsorption.png" width="32%"></img>
+<img src="https://github.com/jmrplens/A-Lab/blob/dbb199b9b21f8d9c1c09294dc0a1d02a9d33d509/.github/images/TransmissionTubeSingleTrans.png" width="32%"></img>
+<img src="https://github.com/jmrplens/A-Lab/blob/dbb199b9b21f8d9c1c09294dc0a1d02a9d33d509/.github/images/TransmissionTubeSingleReflection.png" width="32%"></img>
+<img src="https://github.com/jmrplens/A-Lab/blob/dbb199b9b21f8d9c1c09294dc0a1d02a9d33d509/.github/images/TransmissionTubeSingleAbsorption.png" width="32%"></img>
 
 <br>
 
@@ -450,7 +450,7 @@ Here is a table of the sources used for the implementation of some of the measur
 <a id="supports"></a>
 # Supports
 
-<a href="https://www.upv.es"><img align="Left" height="100" src="https://jmrplens.com/GitHub_ALab/LogoUPV2.png"></img></a><a href="https://www.gandia.upv.es/"><img align="Left" height="100" src="https://jmrplens.com/GitHub_ALab/LogoEPSG2.png"></img></a><a href="https://igic.webs.upv.es/"><img align="Left" height="100" src="https://jmrplens.com/GitHub_ALab/LogoIGICb.png"></img></a>***Thanks to the [Waves in Complex Media group](https://igic.webs.upv.es/index.php?option=com_content&view=article&id=22), [Higher Polytechnic School of Gandia](https://www.upv.es/contenidos/CGANDIA/index-en.html) and [Polytechnic University of Valencia](https://www.upv.es/index-en.html) for providing the necessary equipment to develop some of the measures implemented in the software and for all the support in time, meet, talk and discussions.***
+<a href="https://www.upv.es"><img align="Left" height="100" src="https://github.com/jmrplens/A-Lab/blob/dbb199b9b21f8d9c1c09294dc0a1d02a9d33d509/.github/images/LogoUPV2.png"></img></a><a href="https://www.gandia.upv.es/"><img align="Left" height="100" src="https://github.com/jmrplens/A-Lab/blob/dbb199b9b21f8d9c1c09294dc0a1d02a9d33d509/.github/images/LogoEPSG2.png"></img></a><a href="https://igic.webs.upv.es/"><img align="Left" height="100" src="https://github.com/jmrplens/A-Lab/blob/dbb199b9b21f8d9c1c09294dc0a1d02a9d33d509/.github/images/LogoIGICb.png"></img></a>***Thanks to the [Waves in Complex Media group](https://igic.webs.upv.es/index.php?option=com_content&view=article&id=22), [Higher Polytechnic School of Gandia](https://www.upv.es/contenidos/CGANDIA/index-en.html) and [Polytechnic University of Valencia](https://www.upv.es/index-en.html) for providing the necessary equipment to develop some of the measures implemented in the software and for all the support in time, meet, talk and discussions.***
 
 <p><br /></p>
 Special mention for <a href="https://www.linkedin.com/in/gabrielebunkheila/">Gabriele Bunkheila</a> and <a href="https://www.linkedin.com/in/carsanbo/">Carlos Sanchis</a> for helping me and answer my questions with MATLAB, those long email threads are very valuable.
