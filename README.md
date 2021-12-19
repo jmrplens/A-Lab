@@ -28,7 +28,7 @@ The software uses the MATLAB audio libraries, specifically, to transmit and rece
 In order to make use of the <a href="https://www.mathworks.com/help/audio/ref/audioplayerrecorder-system-object.html">audioPlayerRecorder</a> object, it is necessary to have a sound card that supports 'Full-Duplex'. All external audio cards have 'Full-Duplex', but the audio cards integrated in computers, especially laptops, do not usually have support for this object. A|Lab will notify you with a window if your hardware is not compatible (image below), if you have several sound cards and one that is valid, enter the configuration and select it.
 
 <p align="center">
-<img src="https://jmrplens.com/GitHub_ALab/noFullDuplex.png" width="40%"></img> 
+<img src="https://github.com/jmrplens/A-Lab/blob/e86de2b313cba96f422deaba3747a0959e8e51cc/.github/images/noFullDuplex.png" width="40%"></img> 
 </p>
 
 If you are only opening a previous project, you can ignore the warning.
@@ -73,7 +73,7 @@ To open the software you have two options:
 In this panel you can configure the parameters of the audio device and calibrate the system latency (useful for correcting delays in the impulse response). Also, if you have a microphone calibrator, you can calibrate each input channel.
 
 <p align="center">
-<img src="https://jmrplens.com/GitHub_ALab/devicepanelc.png?" width="70%"></img> 
+<img src="https://github.com/jmrplens/A-Lab/blob/e86de2b313cba96f422deaba3747a0959e8e51cc/.github/images/devicepanelc.png" width="70%"></img> 
 </p>
 
 Options:
@@ -138,7 +138,7 @@ sigReceived = sigReceived ./  K; % Calibrated signal
 ## Signal panel
 The signal selection panel appears in all types of measurements. 
 
-<img width="225" src="https://jmrplens.com/GitHub_ALab/sweepPanel.png"></img>
+<img width="225" src="https://github.com/jmrplens/A-Lab/blob/e86de2b313cba96f422deaba3747a0959e8e51cc/.github/images/sweepPanel.png"></img>
 
 The available signals depend on the chosen measurement method. The following signals are available:
   * MLS
@@ -191,7 +191,7 @@ All signals are normalized between 0.5 and -0.5: `signal = (signal/max(abs(signa
 
 <a id="information-panel"></a>
 ## Information panel
- <img align="left" height="150" src="https://jmrplens.com/GitHub_ALab/infoPanelc.png"></img> This panel always appears in the bar on the right. It displays the relevant information of the audio device.
+ <img align="left" height="150" src="https://github.com/jmrplens/A-Lab/blob/e86de2b313cba96f422deaba3747a0959e8e51cc/.github/images/infoPanelc.png"></img> This panel always appears in the bar on the right. It displays the relevant information of the audio device.
  If latency calibration has not been performed it shows the approximate value (`SamplesPerFrame/SampleRate*2`) but this value is not applied to signals.
  If at least one input of the device has been calibrated, the word 'Yes' and the channels numbers will be displayed in the input calibration.
 
@@ -211,7 +211,7 @@ This method is only to perform some tests and see some options that MATLAB offer
 **Tip**: If you have calibrated the input of a microphone, take a measurement with the calibrator attached to the microphone. You can see the measured value in the 'Sound Pressure Level' panel, it must be the same as the reference value of the calibrator. This way you will check that everything is working correctly.
 
 <p align="center">
-<img src="https://jmrplens.com/GitHub_ALab/GeneralMethod.png?" width="49%"></img>
+<img src="https://github.com/jmrplens/A-Lab/blob/e86de2b313cba96f422deaba3747a0959e8e51cc/.github/images/GeneralMethod.png" width="49%"></img>
 </p>
 
 <br>
@@ -245,7 +245,7 @@ The side panels that appear in this measurement method are:
 
 |Left panel|Right panel|
 |:-------:|:------:|
-|<img src="https://jmrplens.com/GitHub_ALab/ImpedanceTubeLeftc.png" width="50%"></img>|<img src="https://jmrplens.com/GitHub_ALab/ImpedanceTubeRightc.png" width="50%"></img>|
+|<img src="https://github.com/jmrplens/A-Lab/blob/e86de2b313cba96f422deaba3747a0959e8e51cc/.github/images/ImpedanceTubeLeftc.png" width="50%"></img>|<img src="https://github.com/jmrplens/A-Lab/blob/e86de2b313cba96f422deaba3747a0959e8e51cc/.github/images/ImpedanceTubeRightc.png" width="50%"></img>|
 
 
 <a id="tube-parameters"></a>
@@ -254,7 +254,7 @@ The side panels that appear in this measurement method are:
 Enter in this panel the geometric parameters of the tube: shape, distance between microphones and distance to the sample. Make sure all distances are measured correctly. Also do not forget to indicate the shape of the tube.
 
 <p align="center">
-<img src="https://jmrplens.com/GitHub_ALab/ImpedanceTubeParametersc.png" width="49%"></img>
+<img src="https://github.com/jmrplens/A-Lab/blob/e86de2b313cba96f422deaba3747a0959e8e51cc/.github/images/ImpedanceTubeParametersc.png" width="49%"></img>
 </p>
 
 <a id="one-mic-measurement"></a>
@@ -264,7 +264,7 @@ If you only have one microphone, you can perform the measurement through this pa
 First place the microphone in position [A] and press `Measure [A]`, then move the microphone to position [B] and press `Measure [B]`. Finally, click on the button `Calculate results` in the right panel.
 
 <p align="center">
-<img src="https://jmrplens.com/GitHub_ALab/ImpedanceTubeOneMicc.png" width="49%"></img>
+<img src="https://github.com/jmrplens/A-Lab/blob/e86de2b313cba96f422deaba3747a0959e8e51cc/.github/images/ImpedanceTubeOneMicc.png" width="49%"></img>
 </p>
 
 <a id="two-mic-measurement"></a>
@@ -275,7 +275,7 @@ You can also calibrate the system by pressing `Calibrate (optional)`.
 Once the measurement is finished, press the button `Calculate results` in the right panel. If you have calibrated the tube, the software will ask you if you want to use the calibration.
 
 <p align="center">
-<img src="https://jmrplens.com/GitHub_ALab/ImpedanceTubeTwoMicc.png" width="49%"></img>
+<img src="https://github.com/jmrplens/A-Lab/blob/e86de2b313cba96f422deaba3747a0959e8e51cc/.github/images/ImpedanceTubeTwoMicc.png" width="49%"></img>
 </p>
 
 <a id="calibrate-the-impedance-tube-system"></a>
