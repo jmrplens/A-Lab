@@ -38,7 +38,11 @@ app.ExtUI.OutputchannelDropDownCalibrateLatency.Items = string(1:Nout);
 app.ExtUI.OutputchannelDropDownCalibrateLatency.BackgroundColor = [1 1 1];
 app.ExtUI.OutputchannelDropDownCalibrateLatency.Layout.Row = 3;
 app.ExtUI.OutputchannelDropDownCalibrateLatency.Layout.Column = 3;
-app.ExtUI.OutputchannelDropDownCalibrateLatency.Value = '1';
+if ~isempty(app.ExtUI.OutputchannelDropDownCalibrateLatency.Items)
+    app.ExtUI.OutputchannelDropDownCalibrateLatency.Value = '1';
+else
+    app.ExtUI.OutputchannelDropDownCalibrateLatency.Items = string(1);
+end
 
 % Create InputchannelDropDownLabel
 app.ExtUI.InputchannelDropDownLabel = uilabel(app.ExtUI.GridCenterPanelCalibrationLatency);
@@ -54,7 +58,11 @@ app.ExtUI.InputchannelDropDownCalibrateLatency.Items = string(1:Nin);
 app.ExtUI.InputchannelDropDownCalibrateLatency.BackgroundColor = [1 1 1];
 app.ExtUI.InputchannelDropDownCalibrateLatency.Layout.Row = 4;
 app.ExtUI.InputchannelDropDownCalibrateLatency.Layout.Column = 3;
-app.ExtUI.InputchannelDropDownCalibrateLatency.Value = '1';
+if ~isempty(app.ExtUI.InputchannelDropDownCalibrateLatency.Items)
+    app.ExtUI.InputchannelDropDownCalibrateLatency.Value = '1';
+else
+    app.ExtUI.InputchannelDropDownCalibrateLatency.Items = string(1);
+end
 
 % Create CalibrateLatencyInformation
 app.ExtUI.CalibrateLatencyInformation = uilabel(app.ExtUI.GridCenterPanelCalibrationLatency);

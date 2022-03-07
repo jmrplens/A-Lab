@@ -92,7 +92,7 @@ app.ExtUI.SamplesperframeEditField.RoundFractionalValues = 'on';
 app.ExtUI.SamplesperframeEditField.ValueDisplayFormat = '%d';
 app.ExtUI.SamplesperframeEditField.Layout.Row = 2;
 app.ExtUI.SamplesperframeEditField.Layout.Column = 2;
-if isempty(app.SamplesPerFrame)
+if isempty(app.SamplesPerFrame) || app.SamplesPerFrame == 0
     app.ExtUI.SamplesperframeEditField.Value = 2048;
     app.SamplesPerFrame = app.ExtUI.SamplesperframeEditField.Value;
 else
@@ -175,7 +175,7 @@ app.ExtUI.BitdepthDevice.Layout.Row = 3;
 app.ExtUI.BitdepthDevice.Layout.Column = 2;
 app.ExtUI.BitdepthDevice.BackgroundColor = [1 1 1];
 app.ExtUI.BitdepthDevice.Items = {'16-bit integer','24-bit integer','32-bit float'};
-if isempty(app.BitDepth)
+if isempty(app.BitDepth) || strcmp(app.BitDepth,'-')
     app.BitDepth = app.ExtUI.BitdepthDevice.Value;
 else
     app.ExtUI.BitdepthDevice.Value = app.BitDepth;
