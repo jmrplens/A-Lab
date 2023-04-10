@@ -2,7 +2,7 @@ name: Mirror to gitlab
 
 on:
   push:
-    branches: [ main, sources ]
+    branches: [ main, source ]
   workflow_dispatch:
 
 jobs:
