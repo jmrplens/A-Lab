@@ -1,7 +1,3 @@
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate?hosted_button_id=BLP3R6VGYJB4Q) 
-[![Donate](https://img.shields.io/badge/Donate-Ko--fi-brightgreen?color=ff5f5f)](https://ko-fi.com/jmrplens) 
-[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub-brightgreen?color=ea4aaa)](https://github.com/sponsors/jmrplens) 
-
 [![View A|Lab on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/93180-a-lab)
 
 #### GitHub and code info
@@ -52,7 +48,6 @@ The software allows you to save the entire measurement project to be able to ope
   - [Robot measurement \(Polytechnic University of Valencia\)](#robot-measurement-upv)
 - [Standards and theory](#standards-and-theory)
 - [Supports](#supports)
-- [Author](#author)
 ---
 
 <a id="general"></a>
@@ -453,14 +448,4 @@ Here is a table of the sources used for the implementation of some of the measur
 <a href="https://www.upv.es"><img align="Left" height="100" src="https://github.com/jmrplens/A-Lab/blob/dbb199b9b21f8d9c1c09294dc0a1d02a9d33d509/.github/images/LogoUPV2.png"></img></a><a href="https://www.gandia.upv.es/"><img align="Left" height="100" src="https://github.com/jmrplens/A-Lab/blob/dbb199b9b21f8d9c1c09294dc0a1d02a9d33d509/.github/images/LogoEPSG2.png"></img></a><a href="https://igic.webs.upv.es/"><img align="Left" height="100" src="https://github.com/jmrplens/A-Lab/blob/dbb199b9b21f8d9c1c09294dc0a1d02a9d33d509/.github/images/LogoIGICb.png"></img></a>***Thanks to the [Waves in Complex Media group](https://igic.webs.upv.es/index.php?option=com_content&view=article&id=22), [Higher Polytechnic School of Gandia](https://www.upv.es/contenidos/CGANDIA/index-en.html) and [Polytechnic University of Valencia](https://www.upv.es/index-en.html) for providing the necessary equipment to develop some of the measures implemented in the software and for all the support in time, meet, talk and discussions.***
 
 <p><br /></p>
-Special mention for <a href="https://www.linkedin.com/in/gabrielebunkheila/">Gabriele Bunkheila</a> and <a href="https://www.linkedin.com/in/carsanbo/">Carlos Sanchis</a> for helping me and answer my questions with MATLAB, those long email threads are very valuable.
-
----
-
-<a id="author"></a>
-# Author
-Jose M. Requena Plens, 2021. (<a href="https://jmrplens.github.io/">jmrplens.github.io</a>)
-
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate?hosted_button_id=BLP3R6VGYJB4Q)
-[![Donate](https://img.shields.io/badge/Donate-Ko--fi-brightgreen?color=ff5f5f)](https://ko-fi.com/jmrplens)
-[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub-brightgreen?color=ea4aaa)](https://github.com/sponsors/jmrplens) 
+Special mention for <a href="https://www.linkedin.com/in/gabrielebunkheila/">Gabriele Bunkheila</a> and <a href="https://www.linkedin.com/in/carsanbo/">Carlos Sanchis</a> for helping me and answer my questions with MATLAB, those long email threads are very valuable. 
